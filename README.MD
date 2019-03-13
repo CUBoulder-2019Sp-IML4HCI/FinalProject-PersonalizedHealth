@@ -1,5 +1,5 @@
 
-<header> Personalized Health </header>
+<h1 align="center"> Personalized Health </h1>
 <p align="center">
   <img src="objects/images/readme1.jpg" alt="Title-Image" />
 </p>
