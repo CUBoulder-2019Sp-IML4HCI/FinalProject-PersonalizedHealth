@@ -1,2 +1,6 @@
 #Authentication Files
 auth.txt
+
+#Auth Scripts
+fitbitService.py
+gather_keys_oauth2.py
