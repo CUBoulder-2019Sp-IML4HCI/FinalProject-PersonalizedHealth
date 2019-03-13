@@ -4,7 +4,9 @@
   <img src="objects/images/readme1.jpg" alt="Title-Image" />
 </p>
 
-## Robert Renecker - Jacob Munoz - Akshit Arora
+<p align="center">
+ <b>Robert Renecker - Jacob Munoz - Akshit Arora</b>
+</p>
 
 ## The Idea and Mission Statement
 
