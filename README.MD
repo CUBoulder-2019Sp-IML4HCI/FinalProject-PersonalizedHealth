@@ -91,6 +91,6 @@ Week 15 - Presentation/Production Phase
 - Demonstrate inference via regression model
 - Demonstrate personalized recommendations
 
-##Bibliography
+## Bibliography
 
 Inspired by other teams' time table
