@@ -30,9 +30,11 @@ Another challenge we face is quantifying user data into running capabilities and
 
 ## The Technologies
 - Tensorflow
-  - Tensorflow is an open-source python library. It contains tons of different machine learning libraries that enable a user to create a state-of-the-art machine learning applications. 
-- React or Flask
+  - Tensorflow is an open-source python library. It contains tons of different machine learning libraries that enable a user to create a state-of-the-art machine learning applications.
+- Flask
+  - Flask is a highly scalable micro web-framework available in python. It is extremely well documented and contains tons of examples to give a user all the information needed in order to get a web application up and running.
 - Fitbit (or a sensor that provides real-time access to heartbeat)
+  - To monitor user vitalities while running to update the user’s training buddy(model)
 
 ## Risks of failure
 
@@ -45,34 +47,50 @@ Fitbit is a technology that requires the hardware to be in working order. Like a
 The only ethical question we can see as of right now is our application providing unhealthy recommendations. If our model is over/under fit we could potentially provide someone with an overly intense running routine that could cause physical harm. If our app tells someone they should be able to run 10 miles on their first run and they attempt it, they could injure themselves based off of our recommendations. To avoid this we will have to conduct thorough running research to that we are able to gage our model’s suggestions and provide realistic goals for users.
 
 ## Open Source and Closed Source Components
-Tensorflow (partly open sourced)
-FitBit API (closed source)
+1. Tensorflow (partly open sourced)
+2. FitBit API (closed source)
 
 ## The Timeline
 
 Week 8 - The Concept Phase
-User’s requirements.
-More specific than the data.
-What final project should look like.
-Extensive storyboarding / wireframing and storytelling wouldn’t be a bad addition.
+- User’s requirements.
+- More specific than the data.
+- What final project should look like.
+- Extensive storyboarding / wireframing and storytelling wouldn’t be a bad addition.
 
 Week 9 - The Planning Phase
-Talk with possible users.
-Write proposal.
-Iteration begins by end of week 9.
+- Talk with possible users.
+- Write proposal.
+- Iteration begins by end of week 9.
 
 Week 10 - The Design & Development Phase
-Play with and learn new technologies.
-Set up and test fitbits.
-Begin Constructing regression model
+- Play with and learn new technologies.
+- Set up and test fitbits.
+- Begin Constructing regression model
 
-Week 11 - Spring Break
+Week 11
+- Spring Break
 
-Week 12-14 - The Design & Development Phase
-Construct regression model.
-Create webapp.
+Week 12
+- Construct regression model.
+- Think about webapp UI.
+- Deliverable: A trained model(Potentially rough first iteration)
+
+Week 13
+- Strengthen the model, test internally
+- Setup application framework
+- Deliverable: A ‘better’ model; A skeleton of a webapp to expand on
+
+Week 14
+- Integrate our model with our application
+- Application front-end
+- Deliverable: An application with a ML model fully integrated
 
 Week 15 - Presentation/Production Phase
-Demonstrate ability to use github ID with web application
-Demonstrate inference via regression model
-Demonstrate personalized recommendations
+- Demonstrate ability to use github ID with web application
+- Demonstrate inference via regression model
+- Demonstrate personalized recommendations
+
+##Bibliography
+
+Inspired by other teams' time table
