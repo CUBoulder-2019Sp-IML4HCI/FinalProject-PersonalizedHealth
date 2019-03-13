@@ -30,7 +30,7 @@ Another challenge we face is quantifying user data into running capabilities and
 
 ## The Technologies
 - Tensorflow
-  - Tensorflow is an open-source python library. It contains tons of different machine learning libraries that enable a user to create a state-of-the-art machine learning applications.
+  - Tensorflow is an open-source python library. It contains tons of different machine learning libraries that enable a user to create state-of-the-art machine learning applications.
 - Flask
   - Flask is a highly scalable micro web-framework available in python. It is extremely well documented and contains tons of examples to give a user all the information needed in order to get a web application up and running.
 - Fitbit (or a sensor that provides real-time access to heartbeat)
