@@ -1,7 +1,8 @@
 # Project Proposal Draft
 <p align="center">
-![Alt text](objects/images/readme1.jpg?raw=true "Title-Image")
+  <img src="objects/images/readme1.jpg" alt="Title-Image" /> 
 </p>
+
 Robert Renecker
 Jacob Munoz
 Akshit Arora
