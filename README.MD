@@ -1,11 +1,10 @@
-# Project Proposal Draft
+
+# Personalized Health
 <p align="center">
-  <img src="objects/images/readme1.jpg" alt="Title-Image" /> 
+  <img src="objects/images/readme1.jpg" alt="Title-Image" />
 </p>
 
-Robert Renecker
-Jacob Munoz
-Akshit Arora
+##Robert Renecker - Jacob Munoz - Akshit Arora
 
 ## The Idea and Mission Statement
 
