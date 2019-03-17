@@ -8,6 +8,13 @@
  <b>Robert Renecker - Jacob Munoz - Akshit Arora</b>
 </p>
 
+## Versions Selected
+
+Swift 3
+WatchOS 5.1.3
+iOS 12.1.4
+XCode 10
+
 ## The Idea and Mission Statement
 
 The goal for our project is to build a personalized goal application for running. Given a broad spectrum ranging from never-have-run-before to I-run-every-day, a regression model will be able to provide inference to a recommendation that a potential runner should carry out in order to meet a goal. The goals may be weight loss or the ability to run a certain distance. By using this application, hopefully a potential runner will be able to achieve these goals in a way that is personalized to their health and ability.
