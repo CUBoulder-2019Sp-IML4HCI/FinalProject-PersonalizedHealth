@@ -102,4 +102,4 @@ Week 15 (4/20 - 4/27) - Final Presentation
 6. Apple HealtKit ([link](https://developer.apple.com/healthkit/))
 7. Inspired by other teams’ time table
 8. TF for Swift ([link](https://www.tensorflow.org/swift))
-9. Swift App Tutorial ([link(https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/BuildABasicUI.html#//apple_ref/doc/uid/TP40015214-CH5-SW1))
+9. Swift App Tutorial ([link](https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/BuildABasicUI.html#//apple_ref/doc/uid/TP40015214-CH5-SW1))
