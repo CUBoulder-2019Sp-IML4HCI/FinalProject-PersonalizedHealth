@@ -10,9 +10,9 @@
 
 ## Versions Selected
 
-Swift 3
-WatchOS 5.1.3
-iOS 12.1.4
+Swift 3 \
+WatchOS 5.1.3 \
+iOS 12.1.4 \
 XCode 10
 
 ## The Idea and Mission Statement
