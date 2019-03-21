@@ -41,11 +41,9 @@ Week 11:
 
 - Jacob Munoz
   -
-  -
   - Youtube segment
 
 - Akshit Arora
-  -
   -
   - Youtube segment.
 
