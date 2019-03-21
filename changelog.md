@@ -20,7 +20,7 @@ Week 9 (3/10 - 3/16) - Concept:
     - Further researched iOS UI design through Apple's direct guidelines ([link](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/))
 
   - Akshit Arora ([@aroraakshit](http://github.com/aroraakshit))
-    - Completed Udacity course on iOS dev. Built a boilerplate app to understand iOS application lifecycle ([link](https://github.com/CUBoulder-2019Sp-IML4HCI/FinalProject-PersonalizedHealth/tree/pitchPerfect/pitchPerfect))
+    - Completed Udacity course on iOS dev. Built a boilerplate app to understand iOS application lifecycle ([PitchPerfect branch - link](https://github.com/CUBoulder-2019Sp-IML4HCI/FinalProject-PersonalizedHealth/tree/pitchPerfect/pitchPerfect))
     - Studied architectures of sample projects on GitHub that used HealthKit to design an architecture for our app. ([Vimo HeartRate](https://github.com/CUBoulder-2019Sp-IML4HCI/FinalProject-PersonalizedHealth/tree/sampleWatchOS/watchOS-3-heartrate), [Diabetes Monitoring Assist](https://github.com/wytesk133/diabetes-monitoring-assist), [Aima](https://github.com/leonidprovorov/aima))
-    - Finalized an architecture where the views for iOS app and WatchOS app are separate, and the logic to control both the apps is separate
+    - Finalized an architecture where the views for iOS app and WatchOS app are separate, and the logic to control the views (aka. model) for both the apps is separate
     - Finalized versions for XCode, iOS, WatchOS, Swift to avoid dev version conflicts
