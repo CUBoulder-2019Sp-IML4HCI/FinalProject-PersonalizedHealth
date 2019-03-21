@@ -25,6 +25,9 @@ Week 9:
     - Finalize project proposal with team.
     - Download software needed.
     - Plan out tools needed and find other similar projects done for reference.
+    - Boiler Place application written in Swift. Authorizes users on watchOS/iOS to let App use HealthKit.
+    - Research of Swift, Xcode, HealthKit API (tutorials + couple hours of reading material)
+    - Youtube segment
 
   - Jacob Munoz
     - Explored UI design tools(Sketch, Adobe XD, and Figma) and decided on Figma for it's ease of use without loss of capabilities
@@ -37,9 +40,6 @@ Week 9:
 Week 11:
 
 - Robert Renecker:
-  - Boiler Place application written in Swift. Authorizes users on watchOS/iOS to let App use HealthKit.
-  - Research of Swift, Xcode, HealthKit API (tutorials + couple hours of reading material)
-  - Youtube segment
 
 - Jacob Munoz:
 
