@@ -39,11 +39,11 @@ Week 11:
   - Research of Swift, Xcode, HealthKit API (tutorials + couple hours of reading material)
   - Youtube segment
 
-- Jacob Munoz
+- Jacob Munoz:
   -
   - Youtube segment
 
-- Akshit Arora
+- Akshit Arora:
   -
   - Youtube segment.
 
