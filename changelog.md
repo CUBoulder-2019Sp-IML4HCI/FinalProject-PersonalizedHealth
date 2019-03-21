@@ -40,9 +40,9 @@ Week 11:
   - Youtube segment.
 
 
-  -Jacob Munoz
+  - Jacob Munoz
 
-  -Akshit Arora
+  - Akshit Arora
 
 
 
