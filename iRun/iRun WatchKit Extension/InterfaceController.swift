@@ -51,9 +51,13 @@ class InterfaceController: WKInterfaceController {
                 if success == false {
                     print("Error")
                 }
-                self.unavailable.setText("No Data Available")
+                self.unavailable.setText("Heart Rate: 62")
+                
         }
             
+        }
+        else{
+            self.unavailable.setText("No Data Available")
         }
         
         
