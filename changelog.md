@@ -27,7 +27,9 @@ Week 9:
     - Plan out tools needed and find other similar projects done for reference.
 
   - Jacob Munoz
-
+    - Explored UI design tools(Sketch, Adobe XD, and Figma) and decided on Figma for it's ease of use without loss of capabilities
+    - Discussed with Robert and Akshit the architecture of our project to better understand the deisgn capabilities of iOS development
+    - Further researched iOS UI design through Apple's direct guidelines: https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/
   - Akshit Arora
 
 
@@ -40,10 +42,6 @@ Week 11:
   - Youtube segment
 
 - Jacob Munoz:
-    - Explored UI design tools(Sketch, Adobe XD, and Figma) and decided on Figma for it's ease of use without loss of capabilities
-    - Discussed with Robert and Akshit the architecture of our project to better understand the deisgn capabilities of iOS development
-    - Further researched iOS UI design through Apple's direct guidelines: https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/
-  - Youtube segment
 
 - Akshit Arora:
   -
