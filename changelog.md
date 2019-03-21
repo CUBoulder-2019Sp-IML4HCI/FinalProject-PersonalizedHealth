@@ -11,10 +11,10 @@
 
 
 Week 9:
- - Robert Renecker:
-  - Helped write proposal.
-  - Compound realistic goals with team.
-  - Talk with class and other groups; Feedback analysis.
+  - Robert Renecker:
+    - Helped write proposal.
+    - Compound realistic goals with team.
+    - Talk with class and other groups; Feedback analysis.
 
  - Jacob Munoz
 
