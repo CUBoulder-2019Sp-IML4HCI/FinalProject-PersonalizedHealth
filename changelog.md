@@ -4,9 +4,10 @@ Week 9 (3/10 - 3/16) - Concept:
     - Compound realistic goals with team
     - Talk with class and other groups; Feedback analysis
     - Storyboarding
-    - Tried FitBit API, switched to iOS based on the feedback received
+    - Tried FitBit API, switched to iOS based on the feedback received and because FitBit only offered offline data
 
  Week 10 (3/17 - 3/23) - Planning:
+  - [Personalized Health - Week 10 Video update](https://youtu.be/LEdRSpescg0)
   - Robert Renecker ([@robertrenecker](https://github.com/robertrenecker))
     - Download software needed
     - Plan out tools needed and find other similar projects done for reference.
