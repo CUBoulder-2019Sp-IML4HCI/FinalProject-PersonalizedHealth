@@ -26,9 +26,9 @@ Week 9:
     - Download software needed.
     - Plan out tools needed and find other similar projects done for reference.
 
-  -Jacob Munoz
+  - Jacob Munoz
 
-  -Akshit Arora
+  - Akshit Arora
 
 
 
@@ -40,9 +40,10 @@ Week 11:
   - Youtube segment.
 
 
-  - Jacob Munoz
+ - Jacob Munoz
 
-  - Akshit Arora
+ - Akshit Arora
+
 
 
 
