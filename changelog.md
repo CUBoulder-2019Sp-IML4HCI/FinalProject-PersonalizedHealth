@@ -45,9 +45,9 @@ Week 11:
   - Youtube segment
 
 - Akshit Arora
- -
- - 
- - Youtube segment.
+  -
+  -
+  - Youtube segment.
 
 
 Week 12:
