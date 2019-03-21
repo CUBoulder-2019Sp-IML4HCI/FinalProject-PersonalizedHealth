@@ -36,12 +36,14 @@ Week 11:
 
 - Robert Renecker:
   - Boiler Place application written in Swift. Authorizes users on watchOS/iOS to let App use HealthKit.
-  - Research of Swift, Xcode, HealthKit API (tutorials + couple hours of reading material)
-  - Youtube segment
+  - Research of Swift, Xcode, HealthKit API (tutorials + couple hours of reading material).
+  - Youtube segment.
+
 
 - Jacob Munoz:
   -
   - Youtube segment
+
 
 - Akshit Arora:
   -
