@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="iRun_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="130" height="31" alignment="center" verticalAlignment="center" text="Label" id="3B5-Ah-F7b"/>
+                        <table alignment="left" id="akP-gq-1nw">
+                            <items>
+                                <tableRow identifier="RowController" id="ZYP-Yg-cXJ" customClass="RowController" customModule="iRun_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="IqB-ui-0Zw">
+                                        <items>
+                                            <label width="126" height="38" alignment="left" text="Label" id="AOO-ef-p3u"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="rowLabel" destination="AOO-ef-p3u" id="bEv-on-kla"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="akP-gq-1nw" id="tUx-Fu-TaT"/>
+                        <outlet property="unavailable" destination="3B5-Ah-F7b" id="Z6r-OX-e6b"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

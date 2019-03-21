@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67134D6D22430F4200620183 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67134D6C22430F4200620183 /* HealthKit.framework */; };
+		67134D6F22430F4900620183 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67134D6E22430F4900620183 /* HealthKit.framework */; };
+		678D452E2241640300EA7018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678D452D2241640300EA7018 /* AppDelegate.swift */; };
+		678D45302241640300EA7018 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678D452F2241640300EA7018 /* ViewController.swift */; };
+		678D45332241640300EA7018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678D45312241640300EA7018 /* Main.storyboard */; };
+		678D45352241640400EA7018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 678D45342241640400EA7018 /* Assets.xcassets */; };
+		678D45382241640400EA7018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678D45362241640400EA7018 /* LaunchScreen.storyboard */; };
+		678D453D2241640400EA7018 /* iRun WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 678D453C2241640400EA7018 /* iRun WatchKit App.app */; };
+		678D45432241640400EA7018 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678D45412241640400EA7018 /* Interface.storyboard */; };
+		678D45452241640500EA7018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 678D45442241640500EA7018 /* Assets.xcassets */; };
+		678D454C2241640500EA7018 /* iRun WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 678D454B2241640500EA7018 /* iRun WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		678D45512241640600EA7018 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678D45502241640600EA7018 /* InterfaceController.swift */; };
+		678D45532241640600EA7018 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678D45522241640600EA7018 /* ExtensionDelegate.swift */; };
+		678D45552241640600EA7018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 678D45542241640600EA7018 /* Assets.xcassets */; };
+		678D45672241656F00EA7018 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678D45662241656F00EA7018 /* RowController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		678D453E2241640400EA7018 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 678D45222241640300EA7018 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 678D453B2241640400EA7018;
+			remoteInfo = "iRun WatchKit App";
+		};
+		678D454D2241640500EA7018 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 678D45222241640300EA7018 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 678D454A2241640500EA7018;
+			remoteInfo = "iRun WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		678D455C2241640600EA7018 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				678D454C2241640500EA7018 /* iRun WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		678D45602241640600EA7018 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				678D453D2241640400EA7018 /* iRun WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6708431C2241DEFD00558BCE /* iRun.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iRun.entitlements; sourceTree = "<group>"; };
+		6708431D2241E04300558BCE /* iRun WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iRun WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		67134D6C22430F4200620183 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		67134D6E22430F4900620183 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		678D452A2241640300EA7018 /* iRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		678D452D2241640300EA7018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		678D452F2241640300EA7018 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		678D45322241640300EA7018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		678D45342241640400EA7018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		678D45372241640400EA7018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		678D45392241640400EA7018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		678D453C2241640400EA7018 /* iRun WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iRun WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		678D45422241640400EA7018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		678D45442241640500EA7018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		678D45462241640500EA7018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		678D454B2241640500EA7018 /* iRun WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "iRun WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		678D45502241640600EA7018 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		678D45522241640600EA7018 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		678D45542241640600EA7018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		678D45562241640600EA7018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		678D45662241656F00EA7018 /* RowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		678D45272241640300EA7018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67134D6F22430F4900620183 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		678D45482241640500EA7018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67134D6D22430F4200620183 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		670843192241DEFD00558BCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67134D6E22430F4900620183 /* HealthKit.framework */,
+				67134D6C22430F4200620183 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		678D45212241640300EA7018 = {
+			isa = PBXGroup;
+			children = (
+				678D452C2241640300EA7018 /* iRun */,
+				678D45402241640400EA7018 /* iRun WatchKit App */,
+				678D454F2241640500EA7018 /* iRun WatchKit Extension */,
+				678D452B2241640300EA7018 /* Products */,
+				670843192241DEFD00558BCE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		678D452B2241640300EA7018 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				678D452A2241640300EA7018 /* iRun.app */,
+				678D453C2241640400EA7018 /* iRun WatchKit App.app */,
+				678D454B2241640500EA7018 /* iRun WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		678D452C2241640300EA7018 /* iRun */ = {
+			isa = PBXGroup;
+			children = (
+				6708431C2241DEFD00558BCE /* iRun.entitlements */,
+				678D452D2241640300EA7018 /* AppDelegate.swift */,
+				678D452F2241640300EA7018 /* ViewController.swift */,
+				678D45312241640300EA7018 /* Main.storyboard */,
+				678D45342241640400EA7018 /* Assets.xcassets */,
+				678D45362241640400EA7018 /* LaunchScreen.storyboard */,
+				678D45392241640400EA7018 /* Info.plist */,
+			);
+			path = iRun;
+			sourceTree = "<group>";
+		};
+		678D45402241640400EA7018 /* iRun WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				678D45412241640400EA7018 /* Interface.storyboard */,
+				678D45442241640500EA7018 /* Assets.xcassets */,
+				678D45462241640500EA7018 /* Info.plist */,
+			);
+			path = "iRun WatchKit App";
+			sourceTree = "<group>";
+		};
+		678D454F2241640500EA7018 /* iRun WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6708431D2241E04300558BCE /* iRun WatchKit Extension.entitlements */,
+				678D45502241640600EA7018 /* InterfaceController.swift */,
+				678D45522241640600EA7018 /* ExtensionDelegate.swift */,
+				678D45542241640600EA7018 /* Assets.xcassets */,
+				678D45562241640600EA7018 /* Info.plist */,
+				678D45662241656F00EA7018 /* RowController.swift */,
+			);
+			path = "iRun WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		678D45292241640300EA7018 /* iRun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 678D45612241640600EA7018 /* Build configuration list for PBXNativeTarget "iRun" */;
+			buildPhases = (
+				678D45262241640300EA7018 /* Sources */,
+				678D45272241640300EA7018 /* Frameworks */,
+				678D45282241640300EA7018 /* Resources */,
+				678D45602241640600EA7018 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				678D453F2241640400EA7018 /* PBXTargetDependency */,
+			);
+			name = iRun;
+			productName = iRun;
+			productReference = 678D452A2241640300EA7018 /* iRun.app */;
+			productType = "com.apple.product-type.application";
+		};
+		678D453B2241640400EA7018 /* iRun WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 678D455D2241640600EA7018 /* Build configuration list for PBXNativeTarget "iRun WatchKit App" */;
+			buildPhases = (
+				678D453A2241640400EA7018 /* Resources */,
+				678D455C2241640600EA7018 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				678D454E2241640500EA7018 /* PBXTargetDependency */,
+			);
+			name = "iRun WatchKit App";
+			productName = "iRun WatchKit App";
+			productReference = 678D453C2241640400EA7018 /* iRun WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		678D454A2241640500EA7018 /* iRun WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 678D45592241640600EA7018 /* Build configuration list for PBXNativeTarget "iRun WatchKit Extension" */;
+			buildPhases = (
+				678D45472241640500EA7018 /* Sources */,
+				678D45482241640500EA7018 /* Frameworks */,
+				678D45492241640500EA7018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iRun WatchKit Extension";
+			productName = "iRun WatchKit Extension";
+			productReference = 678D454B2241640500EA7018 /* iRun WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		678D45222241640300EA7018 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "ML HCI";
+				TargetAttributes = {
+					678D45292241640300EA7018 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					678D453B2241640400EA7018 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					678D454A2241640500EA7018 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 678D45252241640300EA7018 /* Build configuration list for PBXProject "iRun" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 678D45212241640300EA7018;
+			productRefGroup = 678D452B2241640300EA7018 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				678D45292241640300EA7018 /* iRun */,
+				678D453B2241640400EA7018 /* iRun WatchKit App */,
+				678D454A2241640500EA7018 /* iRun WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		678D45282241640300EA7018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				678D45382241640400EA7018 /* LaunchScreen.storyboard in Resources */,
+				678D45352241640400EA7018 /* Assets.xcassets in Resources */,
+				678D45332241640300EA7018 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		678D453A2241640400EA7018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				678D45452241640500EA7018 /* Assets.xcassets in Resources */,
+				678D45432241640400EA7018 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		678D45492241640500EA7018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				678D45552241640600EA7018 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		678D45262241640300EA7018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				678D45302241640300EA7018 /* ViewController.swift in Sources */,
+				678D452E2241640300EA7018 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		678D45472241640500EA7018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				678D45672241656F00EA7018 /* RowController.swift in Sources */,
+				678D45532241640600EA7018 /* ExtensionDelegate.swift in Sources */,
+				678D45512241640600EA7018 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		678D453F2241640400EA7018 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 678D453B2241640400EA7018 /* iRun WatchKit App */;
+			targetProxy = 678D453E2241640400EA7018 /* PBXContainerItemProxy */;
+		};
+		678D454E2241640500EA7018 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 678D454A2241640500EA7018 /* iRun WatchKit Extension */;
+			targetProxy = 678D454D2241640500EA7018 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		678D45312241640300EA7018 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				678D45322241640300EA7018 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		678D45362241640400EA7018 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				678D45372241640400EA7018 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		678D45412241640400EA7018 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				678D45422241640400EA7018 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		678D45572241640600EA7018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		678D45582241640600EA7018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		678D455A2241640600EA7018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "iRun WatchKit Extension/iRun WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XXY825S34M;
+				INFOPLIST_FILE = "iRun WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iRun.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		678D455B2241640600EA7018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "iRun WatchKit Extension/iRun WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XXY825S34M;
+				INFOPLIST_FILE = "iRun WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iRun.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		678D455E2241640600EA7018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = iRun_WatchKit_Extension;
+				INFOPLIST_FILE = "iRun WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iRun.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		678D455F2241640600EA7018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = iRun_WatchKit_Extension;
+				INFOPLIST_FILE = "iRun WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iRun.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		678D45622241640600EA7018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iRun/iRun.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XXY825S34M;
+				INFOPLIST_FILE = iRun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iRun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		678D45632241640600EA7018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iRun/iRun.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XXY825S34M;
+				INFOPLIST_FILE = iRun/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.iRun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		678D45252241640300EA7018 /* Build configuration list for PBXProject "iRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				678D45572241640600EA7018 /* Debug */,
+				678D45582241640600EA7018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		678D45592241640600EA7018 /* Build configuration list for PBXNativeTarget "iRun WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				678D455A2241640600EA7018 /* Debug */,
+				678D455B2241640600EA7018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		678D455D2241640600EA7018 /* Build configuration list for PBXNativeTarget "iRun WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				678D455E2241640600EA7018 /* Debug */,
+				678D455F2241640600EA7018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		678D45612241640600EA7018 /* Build configuration list for PBXNativeTarget "iRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				678D45622241640600EA7018 /* Debug */,
+				678D45632241640600EA7018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 678D45222241640300EA7018 /* Project object */;
+}
