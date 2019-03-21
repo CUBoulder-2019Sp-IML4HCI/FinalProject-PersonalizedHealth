@@ -24,7 +24,7 @@ Week 9:
   - Robert Renecker
     - Finalize project proposal with team.
     - Download software needed.
-    - Plan out tools needed and find other similar projects done for reference. 
+    - Plan out tools needed and find other similar projects done for reference.
 
   - Jacob Munoz
 
@@ -35,13 +35,19 @@ Week 9:
 Week 11:
 
 - Robert Renecker:
-  - Boiler Place application written in Swift. Authorizes users to on watchOS/iOS to let App use HealthKit.
+  - Boiler Place application written in Swift. Authorizes users on watchOS/iOS to let App use HealthKit.
   - Research of Swift, Xcode, HealthKit API (tutorials + couple hours of reading material)
   - Youtube segment
 
 - Jacob Munoz
+  -
+  -
+  - Youtube segment
 
 - Akshit Arora
+ -
+ - 
+ - Youtube segment.
 
 
 Week 12:
