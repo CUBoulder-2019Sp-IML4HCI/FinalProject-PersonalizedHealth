@@ -84,7 +84,7 @@ class RegisterPageViewController: UIViewController{
         
 
         
-        
+        completeRegistrationAlert(myMessage: "Regitration Successful!")
         
         
         
@@ -103,6 +103,23 @@ class RegisterPageViewController: UIViewController{
         alert.addAction(okAction)
         
         self.present(alert, animated: true, completion: nil)
+        
+        
+    }
+    
+    func completeRegistrationAlert(myMessage:String){
+        var alert = UIAlertController(title:"loginAlert", message: myMessage, preferredStyle: UIAlertController.Style.alert)
+        
+        let finalizeAction = UIAlertAction(title:"Ok", style: UIAlertAction.Style.default){
+            action in
+            self.dismiss(animated:true, completion: nil)
+        }
+        
+        alert.addAction(finalizeAction)
+        
+        self.present(alert, animated: true, completion: nil)
+        
+        
         
         
     }
