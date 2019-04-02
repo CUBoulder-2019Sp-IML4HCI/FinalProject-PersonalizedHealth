@@ -22,6 +22,7 @@
 		678D45532241640600EA7018 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678D45522241640600EA7018 /* ExtensionDelegate.swift */; };
 		678D45552241640600EA7018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 678D45542241640600EA7018 /* Assets.xcassets */; };
 		678D45672241656F00EA7018 /* RowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678D45662241656F00EA7018 /* RowController.swift */; };
+		67B7AE1B225402AC00B7C105 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B7AE1A225402AC00B7C105 /* RegisterPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		678D45542241640600EA7018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		678D45562241640600EA7018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		678D45662241656F00EA7018 /* RowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowController.swift; sourceTree = "<group>"; };
+		67B7AE1A225402AC00B7C105 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 				678D45342241640400EA7018 /* Assets.xcassets */,
 				678D45362241640400EA7018 /* LaunchScreen.storyboard */,
 				678D45392241640400EA7018 /* Info.plist */,
+				67B7AE1A225402AC00B7C105 /* RegisterPageViewController.swift */,
 			);
 			path = iRun;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			files = (
 				678D45302241640300EA7018 /* ViewController.swift in Sources */,
 				678D452E2241640300EA7018 /* AppDelegate.swift in Sources */,
+				67B7AE1B225402AC00B7C105 /* RegisterPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

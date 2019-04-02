@@ -28,6 +28,7 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         
         super.willActivate()
+        self.unavailable.setText("Welcome")
         handleHealthKit()
     }
     
@@ -51,7 +52,11 @@ class InterfaceController: WKInterfaceController {
                 if success == false {
                     print("Error")
                 }
-                self.unavailable.setText("Heart Rate: 62")
+                
+                
+                //From here, integrate heart rate controller? (interface)
+                
+                self.unavailable.setText("Heart Rate: Int")
                 
         }
             
