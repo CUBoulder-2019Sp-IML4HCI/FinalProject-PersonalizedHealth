@@ -31,6 +31,7 @@ Week 11 (3/31 - 4/3[6?])
 - Robert Renecker ([@robertrenecker](https://github.com/robertrenecker))
   - Implemented the iOS application. Configured persistence of data that the user will submit on their phone. Helped take from the mock-ups to the design table in Xcode to connect these features to the design we are moving towards. Put together youtube video.
 - Akshit Arora ([@aroraakshit](http://github.com/aroraakshit))
-  - Explored CreateML and CoreML tutorials.
+  - Explored CreateML and CoreML tutorials to understand workflows for ML in iOS development. To check whether online learning is possible or not. [1](https://www.youtube.com/watch?v=x9_BG2q7XYw), [2](https://www.youtube.com/watch?v=T4t73CXB7CU)
+  - Drafted an architecture for ML models based on couch to 5k plan.
 - Jacob Munoz ([@jamu0075](https://github.com/jamu0075))
   - Implemented more UX using figma to provide the key features of the application. The [mock-up](https://www.figma.com/proto/DUEEdmnHawuhMYVCu4EsruqB/Personalized-Health?node-id=1%3A2&scaling=scale-down) is intended to demo the applications interactions without a final GUI to ensure it is intuitive.
