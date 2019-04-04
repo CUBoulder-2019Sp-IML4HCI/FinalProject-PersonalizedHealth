@@ -26,7 +26,9 @@ Week 9 (3/10 - 3/16) - Concept:
     - Finalized an architecture where the views for iOS app and WatchOS app are separate, and the logic to control the views (aka. model) for both the apps is separate
     - Finalized versions for XCode, iOS, WatchOS, Swift to avoid dev version conflicts
 
-Week 11 (3/31 - 4/3[6?])
+Week 11 (3/24 - 3/30) - Spring Break
+
+Week 12 (3/31 - 4/6) - Design & Development:
 - [Personalized Health - Week 12 Video update](https://youtu.be/pEmbwJ8PBj8)
 - Robert Renecker ([@robertrenecker](https://github.com/robertrenecker))
   - Implemented the iOS application. Configured persistence of data that the user will submit on their phone. Helped take from the mock-ups to the design table in Xcode to connect these features to the design we are moving towards. Put together youtube video.
