@@ -25,9 +25,10 @@ Week 9 (3/10 - 3/16) - Concept:
     - Studied architectures of sample projects on GitHub that used HealthKit to design an architecture for our app. ([Vimo HeartRate](https://github.com/CUBoulder-2019Sp-IML4HCI/FinalProject-PersonalizedHealth/tree/sampleWatchOS/watchOS-3-heartrate), [Diabetes Monitoring Assist](https://github.com/wytesk133/diabetes-monitoring-assist), [Aima](https://github.com/leonidprovorov/aima))
     - Finalized an architecture where the views for iOS app and WatchOS app are separate, and the logic to control the views (aka. model) for both the apps is separate
     - Finalized versions for XCode, iOS, WatchOS, Swift to avoid dev version conflicts
-    
+
 Week 11 (3/31 - 4/3[6?])
 - Robert Renecker ([@robertrenecker](https://github.com/robertrenecker))
+  - Implemented the iOS application. Configured persistence of data that the user will submit on their phone. Helped take from the mock-ups to the design table in Xcode to connect these features to the design we are moving towards. Put together youtube video. 
 - Akshit Arora ([@aroraakshit](http://github.com/aroraakshit))
 - Jacob Munoz ([@jamu0075](https://github.com/jamu0075))
-  - Implemented more UX using figma to provide the key features of the application. The [mock-up](https://www.figma.com/proto/DUEEdmnHawuhMYVCu4EsruqB/Personalized-Health?node-id=1%3A2&scaling=scale-down) is intended to demo the applications interactions without a final GUI to ensure it is intuitive. 
+  - Implemented more UX using figma to provide the key features of the application. The [mock-up](https://www.figma.com/proto/DUEEdmnHawuhMYVCu4EsruqB/Personalized-Health?node-id=1%3A2&scaling=scale-down) is intended to demo the applications interactions without a final GUI to ensure it is intuitive.
