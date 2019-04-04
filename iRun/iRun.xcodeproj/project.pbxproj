@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		67134D6D22430F4200620183 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67134D6C22430F4200620183 /* HealthKit.framework */; };
 		67134D6F22430F4900620183 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67134D6E22430F4900620183 /* HealthKit.framework */; };
+		6780923B2255BA180012726C /* StatsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6780923A2255BA180012726C /* StatsPageViewController.swift */; };
 		678D452E2241640300EA7018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678D452D2241640300EA7018 /* AppDelegate.swift */; };
 		678D45302241640300EA7018 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678D452F2241640300EA7018 /* ViewController.swift */; };
 		678D45332241640300EA7018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678D45312241640300EA7018 /* Main.storyboard */; };
@@ -72,6 +73,7 @@
 		6708431D2241E04300558BCE /* iRun WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iRun WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		67134D6C22430F4200620183 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		67134D6E22430F4900620183 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		6780923A2255BA180012726C /* StatsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsPageViewController.swift; sourceTree = "<group>"; };
 		678D452A2241640300EA7018 /* iRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		678D452D2241640300EA7018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		678D452F2241640300EA7018 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				678D45362241640400EA7018 /* LaunchScreen.storyboard */,
 				678D45392241640400EA7018 /* Info.plist */,
 				67B7AE1A225402AC00B7C105 /* RegisterPageViewController.swift */,
+				6780923A2255BA180012726C /* StatsPageViewController.swift */,
 			);
 			path = iRun;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				678D45302241640300EA7018 /* ViewController.swift in Sources */,
 				678D452E2241640300EA7018 /* AppDelegate.swift in Sources */,
 				67B7AE1B225402AC00B7C105 /* RegisterPageViewController.swift in Sources */,
+				6780923B2255BA180012726C /* StatsPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

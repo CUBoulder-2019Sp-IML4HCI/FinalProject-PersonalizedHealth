@@ -31,6 +31,8 @@ class RegisterPageViewController: UIViewController{
         super.viewDidLoad()
     }
     
+    
+    
     //On submit, check if all data is valid and if passwords match.
     //Write data and confirm user.
     @IBAction func registerButtonTapped(_ sender: Any) {
@@ -75,7 +77,7 @@ class RegisterPageViewController: UIViewController{
             print(name)
         }
 
-        defaults.removeObject(forKey: "usersEmail")
+        //defaults.removeObject(forKey: "usersEmail")
         defaults.removeObject(forKey: "usersPassword")
         defaults.removeObject(forKey: "usersWeight")
         defaults.removeObject(forKey: "usersHeight")
