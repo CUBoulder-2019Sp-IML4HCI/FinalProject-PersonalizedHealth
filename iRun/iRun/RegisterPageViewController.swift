@@ -78,11 +78,11 @@ class RegisterPageViewController: UIViewController{
         }
 
         //defaults.removeObject(forKey: "usersEmail")
-        defaults.removeObject(forKey: "usersPassword")
-        defaults.removeObject(forKey: "usersWeight")
-        defaults.removeObject(forKey: "usersHeight")
-        defaults.removeObject(forKey: "usersRecentMiles")
-        defaults.removeObject(forKey: "usersAge")
+//        defaults.removeObject(forKey: "usersPassword")
+//        defaults.removeObject(forKey: "usersWeight")
+//        defaults.removeObject(forKey: "usersHeight")
+//        defaults.removeObject(forKey: "usersRecentMiles")
+//        defaults.removeObject(forKey: "usersAge")
         
 
         

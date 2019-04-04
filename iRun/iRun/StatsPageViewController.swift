@@ -15,6 +15,16 @@ class StatsPageViewController: UIViewController {
     
     @IBOutlet weak var temp1: UILabel!
     
+    @IBOutlet weak var weight: UILabel!
+    
+    @IBOutlet weak var height: UILabel!
+    
+    @IBOutlet weak var recentMiles: UILabel!
+    
+    @IBOutlet weak var age: UILabel!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presentData()
@@ -39,8 +49,25 @@ class StatsPageViewController: UIViewController {
         let usersEmail = defaults.string(forKey: "usersEmail")
         let usersPassword = defaults.string(forKey: "usersPassword")
         
+        let usersWeight = defaults.string(forKey: "usersWeight")
+        
+        let usersHeight = defaults.string(forKey: "usersHeight")
+        
+        let usersRecentMiles = defaults.string(forKey: "usersRecentMiles")
+        
+        let usersAge = defaults.string(forKey: "usersAge")
+        
         
         temp1.text = "Welcome " + usersEmail!
+        
+        
+        weight.text = "Weight: " + usersWeight! + "lbs"
+        
+        height.text = "Height: " + usersHeight! + "cm"
+        
+        recentMiles.text = "You've ran: " + usersRecentMiles! + " miles in the last month!"
+        
+        age.text = "Age: " + usersAge!
         
         
     }
