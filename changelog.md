@@ -26,14 +26,18 @@ Week 9 (3/10 - 3/16) - Concept:
     - Finalized an architecture where the views for iOS app and WatchOS app are separate, and the logic to control the views (aka. model) for both the apps is separate
     - Finalized versions for XCode, iOS, WatchOS, Swift to avoid dev version conflicts
 
+
 Week 11 (3/24 - 3/30) - Spring Break
+
 
 Week 12 (3/31 - 4/6) - Design & Development:
 - [Personalized Health - Week 12 Video update](https://youtu.be/pEmbwJ8PBj8)
 - Robert Renecker ([@robertrenecker](https://github.com/robertrenecker))
   - Implemented the iOS application. Configured persistence of data that the user will submit on their phone. Helped take from the mock-ups to the design table in Xcode to connect these features to the design we are moving towards. Put together youtube video.
+
 - Akshit Arora ([@aroraakshit](http://github.com/aroraakshit))
   - Explored CreateML and CoreML tutorials to understand workflows for ML in iOS development. To check whether online learning is possible or not. ([Better Rest branch - link](https://github.com/CUBoulder-2019Sp-IML4HCI/FinalProject-PersonalizedHealth/tree/createML), [Tutorial 1](https://www.youtube.com/watch?v=x9_BG2q7XYw), [Tutorial 2](https://www.youtube.com/watch?v=T4t73CXB7CU))
   - Drafted an architecture for ML models based on couch to 5k plan.
+
 - Jacob Munoz ([@jamu0075](https://github.com/jamu0075))
   - Implemented more UX using figma to provide the key features of the application. The [mock-up](https://www.figma.com/proto/DUEEdmnHawuhMYVCu4EsruqB/Personalized-Health?node-id=1%3A2&scaling=scale-down) is intended to demo the applications interactions without a final GUI to ensure it is intuitive.
