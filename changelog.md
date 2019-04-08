@@ -26,9 +26,7 @@
     - Finalized an architecture where the views for iOS app and WatchOS app are separate, and the logic to control the views (aka. model) for both the apps is separate
     - Finalized versions for XCode, iOS, WatchOS, Swift to avoid dev version conflicts
 
-
 ### Week 11 (3/24 - 3/30) - Spring Break
-
 
 ### Week 12 (3/31 - 4/6) - Design & Development:
 - [Personalized Health - Week 12 Video update](https://youtu.be/pEmbwJ8PBj8)
@@ -41,3 +39,9 @@
 
 - Jacob Munoz ([@jamu0075](https://github.com/jamu0075))
   - Implemented more UX using figma to provide the key features of the application. The [mock-up](https://www.figma.com/proto/DUEEdmnHawuhMYVCu4EsruqB/Personalized-Health?node-id=1%3A2&scaling=scale-down) is intended to demo the applications interactions without a final GUI to ensure it is intuitive.
+
+### Week 13 (4/7 - 4/13) - Design & Development:
+- Akshit Arora ([@aroraakshit](http://github.com/aroraakshit))
+  - Created first draft of our ML Model and coded a script using Apple's [CreateML](https://developer.apple.com/documentation/createml) to create a .mlmodel file.
+  - Integrated the first iteration of ML model into iRun basic interface using a pre-trained model file (.mlmodel) through Apple's [CoreML](https://developer.apple.com/documentation/coreml).
+  - Identified more features that can be used and explored options to have the model end-user trainable.
