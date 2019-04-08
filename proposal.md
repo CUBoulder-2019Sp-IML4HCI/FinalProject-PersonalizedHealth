@@ -61,35 +61,35 @@ The only ethical question we can see as of right now is our application providin
 
 ## The Timeline
 
-Week 9 (3/10 - 3/16) - Concept
+### Week 9 (3/10 - 3/16) - Concept
 - Finalize the project proposal
 - Figure out the input, deciding between FitBit/Apple Watch (Studying APIs)
 - Extensive storyboarding / wireframing to develop use-cases
 - Envisioning the minimum viable product/demos leading to the finals week
 
-Week 10 (3/17 - 3/23) - Planning
+### Week 10 (3/17 - 3/23) - Planning
 - Talk with possible users
 - Close the dev loop, which involves figuring out (and learning) exactly the frameworks, architecture, UI (watchOS / iOS / webapp) and libraries to use.
 - Deliverable: A small app that displays and responds to features we are targeting to use in our ML model
 
-Week 11 (3/24 - 3/30) - Spring Break
+### Week 11 (3/24 - 3/30) - Spring Break
 
-Week 12 (3/31 - 4/6) - Design & Development
+### Week 12 (3/31 - 4/6) - Design & Development
 - Basic ML model using the available features and couch to 5k plan
 - Iterate over UI, building interaction design
 - Deliverable: App with better interaction design (using only couch to 5K data, no ML yet) and ML model separately
 
-Week 13 (4/7 - 4/13) - Design & Development
+### Week 13 (4/7 - 4/13) - Design & Development
 - Making better model, using more features
 - Thinking ML deployment solutions, choosing from available deployment frameworks MLKit / TensorFlow.
 - Deliverable: First iteration with ML deployed into the app
 
-Week 14 (4/14 - 4/20) - Quality Checks
+### Week 14 (4/14 - 4/20) - Quality Checks
 - Testing the final app, fine-tuning ML model
 - Looking for corner cases and finalizing interaction design
 - Deliverable: An application with a ML model fully integrated
 
-Week 15 (4/20 - 4/27) - Final Presentation
+### Week 15 (4/20 - 4/27) - Final Presentation
 - Complete materials around final submission
 
 ## Bibliography
