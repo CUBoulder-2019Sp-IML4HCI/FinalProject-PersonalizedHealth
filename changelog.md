@@ -1,4 +1,4 @@
-Week 9 (3/10 - 3/16) - Concept:
+## Week 9 (3/10 - 3/16) - Concept:
   - All:
     - Draft and finalize project proposal
     - Compound realistic goals with team
@@ -6,7 +6,7 @@ Week 9 (3/10 - 3/16) - Concept:
     - Storyboarding
     - Tried FitBit API, switched to iOS based on the feedback received and because FitBit only offered offline data
 
- Week 10 (3/17 - 3/23) - Planning:
+ ## Week 10 (3/17 - 3/23) - Planning:
   - [Personalized Health - Week 10 Video update](https://youtu.be/LEdRSpescg0)
   - Robert Renecker ([@robertrenecker](https://github.com/robertrenecker))
     - Download software needed
@@ -27,10 +27,10 @@ Week 9 (3/10 - 3/16) - Concept:
     - Finalized versions for XCode, iOS, WatchOS, Swift to avoid dev version conflicts
 
 
-Week 11 (3/24 - 3/30) - Spring Break
+## Week 11 (3/24 - 3/30) - Spring Break
 
 
-Week 12 (3/31 - 4/6) - Design & Development:
+## Week 12 (3/31 - 4/6) - Design & Development:
 - [Personalized Health - Week 12 Video update](https://youtu.be/pEmbwJ8PBj8)
 - Robert Renecker ([@robertrenecker](https://github.com/robertrenecker))
   - Implemented the iOS application. Configured persistence of data that the user will submit on their phone. Helped take from the mock-ups to the design table in Xcode to connect these features to the design we are moving towards. Put together youtube video.
