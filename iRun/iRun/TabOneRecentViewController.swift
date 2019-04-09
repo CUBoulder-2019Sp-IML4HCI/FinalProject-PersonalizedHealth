@@ -23,6 +23,23 @@ class TabOneRecentViewController: UIViewController {
 
     func showGraph(){
         SummaryHeader.text = UserDefaults.standard.string(forKey: "usersEmail")!
+        let model = SleepCalculator()
+        
+        let wakeUp = Double(120)
+        do{
+        let prediction = try model.prediction(coffee: 4, estimatedSleep: 8, wake: wakeUp)
+            
+        let formatter = DateFormatter()
+        formatter.timeStyle = .short
+        
+        SummaryHeader.text = String(prediction.actualSleep)
+     
+        
+        
+        }
+        catch{
+            print("Unable to perform inference")
+        }
         
     }
     /*

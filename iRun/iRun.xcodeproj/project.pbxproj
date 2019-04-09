@@ -43,6 +43,7 @@
 		67AFDD3C225C447100C59540 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AFDD2B225C447100C59540 /* IQUIView+Hierarchy.swift */; };
 		67AFDD3D225C447100C59540 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AFDD2C225C447100C59540 /* IQNSArray+Sort.swift */; };
 		67AFDD41225D122100C59540 /* TabOneRecentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AFDD40225D122100C59540 /* TabOneRecentViewController.swift */; };
+		67AFDD43225D165C00C59540 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 67AFDD42225D165B00C59540 /* SleepCalculator.mlmodel */; };
 		67B7AE1B225402AC00B7C105 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B7AE1A225402AC00B7C105 /* RegisterPageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -132,6 +133,7 @@
 		67AFDD2B225C447100C59540 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
 		67AFDD2C225C447100C59540 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
 		67AFDD40225D122100C59540 /* TabOneRecentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabOneRecentViewController.swift; sourceTree = "<group>"; };
+		67AFDD42225D165B00C59540 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		67B7AE1A225402AC00B7C105 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -188,6 +190,7 @@
 		678D452C2241640300EA7018 /* iRun */ = {
 			isa = PBXGroup;
 			children = (
+				67AFDD42225D165B00C59540 /* SleepCalculator.mlmodel */,
 				67AFDD15225C447100C59540 /* IQKeyboardManagerSwift */,
 				6708431C2241DEFD00558BCE /* iRun.entitlements */,
 				678D452D2241640300EA7018 /* AppDelegate.swift */,
@@ -446,6 +449,7 @@
 				671C4DF5225B027500A9B4D2 /* TableViewCell.swift in Sources */,
 				67AFDD32225C447100C59540 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				67AFDD31225C447100C59540 /* IQToolbar.swift in Sources */,
+				67AFDD43225D165C00C59540 /* SleepCalculator.mlmodel in Sources */,
 				67AFDD2E225C447100C59540 /* IQPreviousNextView.swift in Sources */,
 				67AFDD3B225C447100C59540 /* IQUITextFieldView+Additions.swift in Sources */,
 				67AFDD37225C447100C59540 /* IQKeyboardReturnKeyHandler.swift in Sources */,
