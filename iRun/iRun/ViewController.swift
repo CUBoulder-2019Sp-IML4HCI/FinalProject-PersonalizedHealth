@@ -15,9 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        self.shouldPerformSegue(withIdentifier: "loginView", sender: self)
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        self.shouldPerformSegue(withIdentifier: "loginView", sender: self)
+//    }
 
 
 }
