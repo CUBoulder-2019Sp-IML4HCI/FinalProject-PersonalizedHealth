@@ -45,3 +45,9 @@
   - Created first draft of our ML Model and coded a script using Apple's [CreateML](https://developer.apple.com/documentation/createml) to create a .mlmodel file.
   - Integrated the first iteration of ML model into iRun basic interface using a pre-trained model file (.mlmodel) through Apple's [CoreML](https://developer.apple.com/documentation/coreml).
   - Identified more features that can be used and explored options to have the model end-user trainable.
+
+- Robert Renecker ([@robertrenecker](https://github.com/robertrenecker))
+  - Iterated over UI. Adapted different Swift projects to use in alignment of our goal and UI design.
+  - Incorporated machine learning model into iOS application that we will be using with the user.
+  - Ran inference on model to test UI compatibility with feature output data.
+  - Found / researched libraries for visualization methods that we want to incorporate into swift.
