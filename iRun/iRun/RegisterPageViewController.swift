@@ -11,19 +11,24 @@ import UIKit
 class RegisterPageViewController: UIViewController{
     let defaults = UserDefaults.standard
 
-    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var name: UITextField!
     
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var Age: UITextField!
     
-    @IBOutlet weak var repeatPasswordTextField: UITextField!
+ 
+    @IBOutlet weak var Height: UITextField!
     
-    @IBOutlet weak var userWeight: UITextField!
+
+    @IBOutlet weak var Weight: UITextField!
     
-    @IBOutlet weak var userHeight: UITextField!
+  
+    @IBOutlet weak var MilesRanLastWeek: UITextField!
     
-    @IBOutlet weak var userMileRanLastMonth: UITextField!
+    @IBOutlet weak var MilesWalkedLastWeek: UITextField!
     
-    @IBOutlet weak var userAge: UITextField!
+    
+    @IBOutlet weak var Other: UITextField!
+    
     
     
     override func viewDidLoad(){
@@ -37,25 +42,23 @@ class RegisterPageViewController: UIViewController{
     //Write data and confirm user.
     @IBAction func registerButtonTapped(_ sender: Any) {
     
-        if emailTextField.text!.isEmpty || passwordTextField.text!.isEmpty || repeatPasswordTextField.text!.isEmpty || userWeight.text!.isEmpty || userHeight.text!.isEmpty || userMileRanLastMonth.text!.isEmpty || userAge.text!.isEmpty {
+        if name.text!.isEmpty || Age.text!.isEmpty || Height.text!.isEmpty || Weight.text!.isEmpty || MilesRanLastWeek.text!.isEmpty || MilesWalkedLastWeek.text!.isEmpty || Other.text!.isEmpty {
             displayLoginAlert(myMessage:"One of the required fields is missing")
             return
         }
        
-        let usersEmail = emailTextField.text
-        let usersPassword = passwordTextField.text
-        let repeatPassword = repeatPasswordTextField.text
-        let usersWeight = Int(userWeight.text!)
-        let usersHeight = Int(userHeight.text!)
-        let usersRecentMiles = Int(userMileRanLastMonth.text!)
-        let usersAge = Int(userAge.text!)
+        let usersName = name.text
+        let usersAge = Int(Age.text!)
+       
+        let usersWeight = Int(Weight.text!)
+        let usersHeight = Int(Height.text!)
+        let usersRecentMilesRan = Int(MilesRanLastWeek.text!)
+        let usersRecentMilesWalked = Int(MilesRanLastWeek.text!)
         
         
+       
         
-        if( usersPassword != repeatPassword){
-            displayLoginAlert(myMessage:"Passwords do not match")
-            return
-        }
+    
             
  
         
@@ -65,24 +68,16 @@ class RegisterPageViewController: UIViewController{
              - For now save locally
         */
         
-        defaults.set(usersEmail, forKey:"usersEmail")
-        defaults.set(usersPassword, forKey:"usersPassword")
+        defaults.set(usersName, forKey:"usersName")
+        defaults.set(usersAge, forKey:"usersAge")
         defaults.set(usersWeight, forKey:"usersWeight")
         defaults.set(usersHeight, forKey:"usersHeight")
-        defaults.set(usersRecentMiles, forKey:"usersRecentMiles")
-        defaults.set(usersAge, forKey:"usersAge")
+        defaults.set(usersRecentMilesRan, forKey:"usersRecentMilesRan")
+        defaults.set(usersRecentMilesWalked, forKey:"usersRecentMilesWalked")
+      
         
+        //defaults.set("true", forKey:"userHasData")
         
-        if let name = defaults.string(forKey: "userEmail") {
-            print(name)
-        }
-
-        //defaults.removeObject(forKey: "usersEmail")
-//        defaults.removeObject(forKey: "usersPassword")
-//        defaults.removeObject(forKey: "usersWeight")
-//        defaults.removeObject(forKey: "usersHeight")
-//        defaults.removeObject(forKey: "usersRecentMiles")
-//        defaults.removeObject(forKey: "usersAge")
         
 
         

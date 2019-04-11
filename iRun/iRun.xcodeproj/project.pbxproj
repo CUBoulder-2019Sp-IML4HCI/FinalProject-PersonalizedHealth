@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		67134D6D22430F4200620183 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67134D6C22430F4200620183 /* HealthKit.framework */; };
-		67134D6F22430F4900620183 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67134D6E22430F4900620183 /* HealthKit.framework */; };
 		671C4DF3225B006400A9B4D2 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C4DF2225B006400A9B4D2 /* Tab1ViewController.swift */; };
 		671C4DF5225B027500A9B4D2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C4DF4225B027500A9B4D2 /* TableViewCell.swift */; };
 		6780923B2255BA180012726C /* StatsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6780923A2255BA180012726C /* StatsPageViewController.swift */; };
@@ -44,6 +43,7 @@
 		67AFDD3D225C447100C59540 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AFDD2C225C447100C59540 /* IQNSArray+Sort.swift */; };
 		67AFDD41225D122100C59540 /* TabOneRecentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AFDD40225D122100C59540 /* TabOneRecentViewController.swift */; };
 		67AFDD43225D165C00C59540 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 67AFDD42225D165B00C59540 /* SleepCalculator.mlmodel */; };
+		67AFDD45225ECEA000C59540 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AFDD44225ECEA000C59540 /* HealthKit.framework */; };
 		67B7AE1B225402AC00B7C105 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B7AE1A225402AC00B7C105 /* RegisterPageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,7 +93,6 @@
 		6708431C2241DEFD00558BCE /* iRun.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iRun.entitlements; sourceTree = "<group>"; };
 		6708431D2241E04300558BCE /* iRun WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iRun WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		67134D6C22430F4200620183 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
-		67134D6E22430F4900620183 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		671C4DF2225B006400A9B4D2 /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
 		671C4DF4225B027500A9B4D2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		6780923A2255BA180012726C /* StatsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsPageViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +133,7 @@
 		67AFDD2C225C447100C59540 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
 		67AFDD40225D122100C59540 /* TabOneRecentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabOneRecentViewController.swift; sourceTree = "<group>"; };
 		67AFDD42225D165B00C59540 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
+		67AFDD44225ECEA000C59540 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		67B7AE1A225402AC00B7C105 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,7 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67134D6F22430F4900620183 /* HealthKit.framework in Frameworks */,
+				67AFDD45225ECEA000C59540 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +160,7 @@
 		670843192241DEFD00558BCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				67134D6E22430F4900620183 /* HealthKit.framework */,
+				67AFDD44225ECEA000C59540 /* HealthKit.framework */,
 				67134D6C22430F4200620183 /* HealthKit.framework */,
 			);
 			name = Frameworks;

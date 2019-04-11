@@ -13,16 +13,17 @@ class StatsPageViewController: UIViewController {
     
     let defaults = UserDefaults.standard
     
-    @IBOutlet weak var temp1: UILabel!
-    
-    @IBOutlet weak var weight: UILabel!
-    
-    @IBOutlet weak var height: UILabel!
-    
-    @IBOutlet weak var recentMiles: UILabel!
+    @IBOutlet weak var name: UILabel!
     
     @IBOutlet weak var age: UILabel!
     
+    @IBOutlet weak var height: UILabel!
+    
+    @IBOutlet weak var weight: UILabel!
+    
+    @IBOutlet weak var recentMilesRan: UILabel!
+    
+    @IBOutlet weak var recentMilesWalked: UILabel!
     
     
     override func viewDidLoad() {
@@ -46,29 +47,61 @@ class StatsPageViewController: UIViewController {
 
     
     func presentData(){
-        let usersEmail = defaults.string(forKey: "usersEmail")
-        let usersPassword = defaults.string(forKey: "usersPassword")
+        if hasUserData() {
+            let usersName =  defaults.string(forKey: "usersName")
+            let usersAge =  defaults.string(forKey: "usersAge")
+            
+            let usersHeight = defaults.string(forKey: "usersHeight")
+            
+            let usersWeight = defaults.string(forKey: "usersWeight")
+            
+            let usersRecentMilesRan = defaults.string(forKey: "usersRecentMilesRan")
+            
+            let usersRecentMilesWalked = defaults.string(forKey: "usersRecentMilesWalked")
+            
+            
+            
+            name.text = "Welcome " + usersName!
+            
+            
+            weight.text = "Weight: " + usersWeight! + "lbs"
+            
+            height.text = "Height: " + usersHeight! + "cm"
+            
+            recentMilesRan.text = "You've ran: " + usersRecentMilesRan! + " miles in the last month!"
+            
+            recentMilesWalked.text = "You've Walked: " + usersRecentMilesWalked! + " miles in the last month!"
+            
+            age.text = "Age: " + usersAge!
+            
+        }   else{
+            print("No data avaialable")
+            name.text = "Welcome "
+            
+            
+            weight.text = "Weight: "
+            
+            height.text = "Height: "
+            
+            recentMilesRan.text = "You've ran: " + "0 miles in the last week!"
+            
+            age.text = "Age: "
+            
+            recentMilesWalked.text = "You've walked: " + " 0 miles in the last week!"
+            
+        }
         
-        let usersWeight = defaults.string(forKey: "usersWeight")
         
-        let usersHeight = defaults.string(forKey: "usersHeight")
-        
-        let usersRecentMiles = defaults.string(forKey: "usersRecentMiles")
-        
-        let usersAge = defaults.string(forKey: "usersAge")
-        
-        
-        temp1.text = "Welcome " + usersEmail!
-        
-        
-        weight.text = "Weight: " + usersWeight! + "lbs"
-        
-        height.text = "Height: " + usersHeight! + "cm"
-        
-        recentMiles.text = "You've ran: " + usersRecentMiles! + " miles in the last month!"
-        
-        age.text = "Age: " + usersAge!
-        
-        
+    }
+    
+    
+    func hasUserData() -> Bool{
+        if let isLogged = defaults.string(forKey: "hasUserData"){
+            return Bool(isLogged) ?? false
+        }
+        else {
+            return false
+        }
+       
     }
 }
