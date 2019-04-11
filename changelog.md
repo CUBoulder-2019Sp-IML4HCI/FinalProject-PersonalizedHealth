@@ -41,7 +41,7 @@
   - Implemented more UX using figma to provide the key features of the application. The [mock-up](https://www.figma.com/proto/DUEEdmnHawuhMYVCu4EsruqB/Personalized-Health?node-id=1%3A2&scaling=scale-down) is intended to demo the applications interactions without a final GUI to ensure it is intuitive.
 
 ### Week 13 (4/7 - 4/13) - Design & Development:
-- [Personalized Health - Week 12 Video update](https://youtu.be/XtAauaUkJPM)
+- [Personalized Health - Week 13 Video update](https://youtu.be/XtAauaUkJPM)
 
 - Akshit Arora ([@aroraakshit](http://github.com/aroraakshit))
   - Created first draft of our ML Model and coded a script using Apple's [CreateML](https://developer.apple.com/documentation/createml) to create a .mlmodel file.
