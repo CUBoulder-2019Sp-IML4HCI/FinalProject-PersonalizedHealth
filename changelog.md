@@ -53,3 +53,9 @@
   - Incorporated machine learning model into iOS application that we will be using with the user.
   - Ran inference on model to test UI compatibility with feature output data.
   - Found / researched libraries for visualization methods that we want to incorporate into swift.
+  
+- Jacob Munoz ([@jamu0075](https://github.com/jamu0075))
+  - Researched the Charts library for swift data visualizations to help Robert when we get there.
+  - Worked with Robert and Akshit to define a MVP
+  - Design a simple first iteration application page for accepting user running input and providing output
+  - Began designing an application flow to 'gameify' the stages of running training to keep users motivated
