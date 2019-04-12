@@ -47,7 +47,7 @@ class StatsPageViewController: UIViewController {
 
     
     func presentData(){
-        if hasUserData() {
+        if hasUserData() == "true" {
             let usersName =  defaults.string(forKey: "usersName")
             let usersAge =  defaults.string(forKey: "usersAge")
             
@@ -95,12 +95,13 @@ class StatsPageViewController: UIViewController {
     }
     
     
-    func hasUserData() -> Bool{
-        if let isLogged = defaults.string(forKey: "hasUserData"){
-            return Bool(isLogged) ?? false
+    func hasUserData() -> String{
+        if let isLogged = defaults.string(forKey: "userHasData"){
+          
+            return isLogged
         }
         else {
-            return false
+            return "false"
         }
        
     }

@@ -54,15 +54,8 @@ class RegisterPageViewController: UIViewController{
         let usersHeight = Int(Height.text!)
         let usersRecentMilesRan = Int(MilesRanLastWeek.text!)
         let usersRecentMilesWalked = Int(MilesRanLastWeek.text!)
+        print(usersName)
         
-        
-       
-        
-    
-            
- 
-        
-    
         /*
             Save / Store the data
              - For now save locally
@@ -76,18 +69,13 @@ class RegisterPageViewController: UIViewController{
         defaults.set(usersRecentMilesWalked, forKey:"usersRecentMilesWalked")
       
         
-        //defaults.set("true", forKey:"userHasData")
+        defaults.set("true", forKey:"userHasData")
         
         
 
         
         completeRegistrationAlert(myMessage: "Regitration Successful!")
-        
-        
-        
-        
-        
-        
+        //performSegue(withIdentifier: "returnSegue", sender: nil)
     }
     
     
@@ -114,10 +102,9 @@ class RegisterPageViewController: UIViewController{
         
         alert.addAction(finalizeAction)
         
-        self.present(alert, animated: true, completion: nil)
-        
-        
-        
+        self.present(alert, animated: true, completion: {
+           self.performSegue(withIdentifier: "showStatsSegue", sender: nil)
+        })
         
     }
     
