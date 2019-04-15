@@ -53,9 +53,23 @@
   - Incorporated machine learning model into iOS application that we will be using with the user.
   - Ran inference on model to test UI compatibility with feature output data.
   - Found / researched libraries for visualization methods that we want to incorporate into swift.
-  
+
 - Jacob Munoz ([@jamu0075](https://github.com/jamu0075))
   - Researched the Charts library for swift data visualizations to help Robert when we get there.
   - Worked with Robert and Akshit to define a MVP
   - Design a simple first iteration application page for accepting user running input and providing output
   - Began designing an application flow to 'gameify' the stages of running training to keep users motivated
+
+
+### Week 14 (4/14-2/20) - Quality Checks:
+- [Personalize Health - Week 14 Video update](None)
+
+- Robert Renecker([@robertrenecker](https://github.com/robertrenecker))
+  - Found available dataset to train model on
+  - Cleaned dataset, synchronized with data available from user input in iOS application.
+  - Data feature analysis.
+  - Incorporated this model in MLKit. Trained given dataset found from Kaggles' Boston Marathon Runner Times 15'16'17 Dataset.
+  - Updated UI to be more friendly to users
+  - Updated UI to handle navigation from 1 main controller versus decoupled-navigation-controllers.
+  - Youtube video
+  - Live demo proof of concept
