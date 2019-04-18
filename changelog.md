@@ -87,8 +87,8 @@
   - Worked on a new feature called 'HeartRateZone' as described [here](https://www.healthline.com/health/running-heart-rate#heart-rate-training).
   
  - Jacob Munoz ([@jamu0075](https://github.com/jamu0075))
-  - Designed our new [MVP](https://www.figma.com/file/DUEEdmnHawuhMYVCu4EsruqB/Personalized-Health?node-id=0%3A1)
-    - Attempting to keep people engaged with the application by providing multiple indicators of progress(Visualization for total goal progress, user interaction for completing goals, tracking previous goals/miles)
-    - Gamify by 'rewarding' the user with progress bars and completion congratulations
-  - Tried to replace my old loaner mac with a newer one, the CS/ATLS department only have bricks...
-    - CU mac labs only support xcode 8, need 10
+    - Designed our new [MVP](https://www.figma.com/file/DUEEdmnHawuhMYVCu4EsruqB/Personalized-Health?node-id=0%3A1)
+      - Attempting to keep people engaged with the application by providing multiple indicators of progress(Visualization for total goal progress, user interaction for completing goals, tracking previous goals/miles)
+      - Gamify by 'rewarding' the user with progress bars and completion congratulations
+    - Tried to replace my old loaner mac with a newer one, the CS/ATLS department only have bricks...
+      - CU mac labs only support xcode 8, need 10
