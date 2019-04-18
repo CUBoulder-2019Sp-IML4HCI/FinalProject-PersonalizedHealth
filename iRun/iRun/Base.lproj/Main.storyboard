@@ -308,7 +308,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="MhR-ku-P8x">
                                         <rect key="frame" x="0.0" y="303" width="374" height="57.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miles Ran in Last Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bM5-gM-Hmb">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miles Ran in Last Workout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bM5-gM-Hmb">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -325,7 +325,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4yl-zF-URS">
                                         <rect key="frame" x="0.0" y="370.5" width="374" height="68"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miles Walked in Last Week" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMH-7f-rDL">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miles Walked in Last Workout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dMH-7f-rDL">
                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -407,31 +407,36 @@
         <!--Model-->
         <scene sceneID="uFg-D6-dDe">
             <objects>
-                <viewController id="wEZ-re-GWD" customClass="TabOneRecentViewController" customModule="iRun" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wEZ-re-GWD" customClass="CurrentPlanViewController" customModule="iRun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wcx-OS-eGO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mJ-Te-NLr">
-                                <rect key="frame" x="168" y="181" width="78" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdS-SZ-czV">
+                                <rect key="frame" x="10" y="118" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4yK-MK-oA1" firstAttribute="trailing" secondItem="jdS-SZ-czV" secondAttribute="trailing" constant="10" id="8ES-6d-Q8g"/>
+                            <constraint firstItem="jdS-SZ-czV" firstAttribute="top" secondItem="4yK-MK-oA1" secondAttribute="top" constant="20" id="KA2-Xo-udw"/>
+                            <constraint firstItem="jdS-SZ-czV" firstAttribute="top" secondItem="4yK-MK-oA1" secondAttribute="top" constant="30" id="Z7O-pl-Z0h"/>
+                            <constraint firstItem="jdS-SZ-czV" firstAttribute="leading" secondItem="4yK-MK-oA1" secondAttribute="leading" constant="10" id="nDt-Uw-AsJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4yK-MK-oA1"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Model" id="E8Y-lw-d5K"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="SummaryHeader" destination="3mJ-Te-NLr" id="gE5-ch-gal"/>
+                        <outlet property="ModelHeader" destination="jdS-SZ-czV" id="mmB-V1-7ec"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HDP-Un-qzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="897" y="2006"/>
+            <point key="canvasLocation" x="895.6521739130435" y="2005.5803571428571"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="MMI-tq-fHx">
@@ -439,6 +444,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ldk-b9-Aph" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ywr-Hv-8U8">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -453,6 +459,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Wei-ea-vEb"/>
+        <segue reference="W9l-Kb-YkK"/>
     </inferredMetricsTieBreakers>
 </document>

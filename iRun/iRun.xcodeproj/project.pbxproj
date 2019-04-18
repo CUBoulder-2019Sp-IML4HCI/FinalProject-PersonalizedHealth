@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		67134D6D22430F4200620183 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67134D6C22430F4200620183 /* HealthKit.framework */; };
 		671C4DF5225B027500A9B4D2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671C4DF4225B027500A9B4D2 /* TableViewCell.swift */; };
+		673190452267D75B006B2431 /* CurrentPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673190442267D75B006B2431 /* CurrentPlanViewController.swift */; };
+		673190472267D9FC006B2431 /* StageCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 673190462267D9FC006B2431 /* StageCalculator.mlmodel */; };
 		6780923B2255BA180012726C /* StatsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6780923A2255BA180012726C /* StatsPageViewController.swift */; };
 		678D452E2241640300EA7018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678D452D2241640300EA7018 /* AppDelegate.swift */; };
 		678D45302241640300EA7018 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678D452F2241640300EA7018 /* ViewController.swift */; };
@@ -93,6 +95,8 @@
 		6708431D2241E04300558BCE /* iRun WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iRun WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		67134D6C22430F4200620183 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		671C4DF4225B027500A9B4D2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		673190442267D75B006B2431 /* CurrentPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPlanViewController.swift; sourceTree = "<group>"; };
+		673190462267D9FC006B2431 /* StageCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = StageCalculator.mlmodel; sourceTree = "<group>"; };
 		6780923A2255BA180012726C /* StatsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsPageViewController.swift; sourceTree = "<group>"; };
 		678D452A2241640300EA7018 /* iRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		678D452D2241640300EA7018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 		678D452C2241640300EA7018 /* iRun */ = {
 			isa = PBXGroup;
 			children = (
+				673190462267D9FC006B2431 /* StageCalculator.mlmodel */,
 				67AFDD42225D165B00C59540 /* SleepCalculator.mlmodel */,
 				67AFDD15225C447100C59540 /* IQKeyboardManagerSwift */,
 				6708431C2241DEFD00558BCE /* iRun.entitlements */,
@@ -201,6 +206,7 @@
 				6780923A2255BA180012726C /* StatsPageViewController.swift */,
 				671C4DF4225B027500A9B4D2 /* TableViewCell.swift */,
 				67AFDD40225D122100C59540 /* TabOneRecentViewController.swift */,
+				673190442267D75B006B2431 /* CurrentPlanViewController.swift */,
 			);
 			path = iRun;
 			sourceTree = "<group>";
@@ -443,12 +449,14 @@
 				67AFDD3C225C447100C59540 /* IQUIView+Hierarchy.swift in Sources */,
 				67B7AE1B225402AC00B7C105 /* RegisterPageViewController.swift in Sources */,
 				67AFDD30225C447100C59540 /* IQBarButtonItem.swift in Sources */,
+				673190452267D75B006B2431 /* CurrentPlanViewController.swift in Sources */,
 				671C4DF5225B027500A9B4D2 /* TableViewCell.swift in Sources */,
 				67AFDD32225C447100C59540 /* IQUIView+IQKeyboardToolbar.swift in Sources */,
 				67AFDD31225C447100C59540 /* IQToolbar.swift in Sources */,
 				67AFDD43225D165C00C59540 /* SleepCalculator.mlmodel in Sources */,
 				67AFDD2E225C447100C59540 /* IQPreviousNextView.swift in Sources */,
 				67AFDD3B225C447100C59540 /* IQUITextFieldView+Additions.swift in Sources */,
+				673190472267D9FC006B2431 /* StageCalculator.mlmodel in Sources */,
 				67AFDD37225C447100C59540 /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				67AFDD38225C447100C59540 /* IQKeyboardManager.swift in Sources */,
 				67AFDD3A225C447100C59540 /* IQUIViewController+Additions.swift in Sources */,
