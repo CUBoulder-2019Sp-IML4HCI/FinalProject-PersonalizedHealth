@@ -61,7 +61,7 @@
   - Began designing an application flow to 'gameify' the stages of running training to keep users motivated
 
 
-### Week 14 (4/14-2/20) - Quality Checks:
+### Week 14 (4/14-4/20) - Quality Checks:
 - [Personalize Health - Week 14 Video update](None)
 
 - Robert Renecker ([@robertrenecker](https://github.com/robertrenecker))
