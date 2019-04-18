@@ -62,7 +62,7 @@
 
 
 ### Week 14 (4/14-4/20) - Quality Checks:
-- [Personalize Health - Week 14 Video update](None)
+- [Personalize Health - Week 14 Video update](https://youtu.be/2pR7CaKURUU)
 
 - Robert Renecker ([@robertrenecker](https://github.com/robertrenecker))
   - Found available dataset to train model on
