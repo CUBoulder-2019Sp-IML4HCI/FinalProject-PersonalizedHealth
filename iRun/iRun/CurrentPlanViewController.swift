@@ -13,6 +13,9 @@ class CurrentPlanViewController: UIViewController {
     @IBOutlet weak var ModelHeader: UILabel!
     
     let defaults = UserDefaults.standard
+    
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,17 +28,21 @@ class CurrentPlanViewController: UIViewController {
         ModelHeader.text = UserDefaults.standard.string(forKey: "usersEmail")!
         
         let recommendationModel = StageCalculator()
-        //let model = SleepCalculator()
-        
-        //let wakeUp = Double(120)
         
         
         do{
-            let workoutPrediction = try recommendationModel.prediction(jog_abs_time: 20.0, jog_frac_time: 0.6, jog_abs_dist: 3.95, jog_frac_dist: 0.7)
-//            let prediction = try model.prediction(coffee: 4, estimatedSleep: 8, wake: wakeUp)
-//
-//            let formatter = DateFormatter()
-//            formatter.timeStyle = .short
+            //Amount ran
+            let usersRecentMilesRan = defaults.string(forKey: "usersRecentMilesRan")
+            //Amount Walked
+            
+            let usersRecentMilesWalked = defaults.string(forKey: "usersRecentMilesWalked")
+            
+            var totalDistance = Double(usersRecentMilesRan!)! + Double(usersRecentMilesWalked!)!
+            
+            var frac = Double(usersRecentMilesRan!)! / totalDistance
+            
+            var timeFrac = Double(0.5)
+            let workoutPrediction = try recommendationModel.prediction(jog_abs_time: Double(usersRecentMilesRan!)!, jog_frac_time: timeFrac, jog_abs_dist: totalDistance, jog_frac_dist: frac)
 
             
             ModelHeader.text = String(workoutPrediction.stage)
