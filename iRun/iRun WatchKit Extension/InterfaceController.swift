@@ -11,13 +11,9 @@ import Foundation
 import HealthKit
 
 class InterfaceController: WKInterfaceController {
-
-    
-    
-    
+    let defaults = NSUbiquitousKeyValueStore.h
     let heartRateUnit = HKUnit(from: "count/min")
     let healthStore = HKHealthStore()
-    
     
     var session : HKWorkoutSession?
     var currenQuery : HKQuery?
@@ -30,21 +26,13 @@ class InterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-
-        
-     
-        
         // Configure interface objects here.
     }
     
-
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         
         super.willActivate()
-        
-        
-        
         
         guard HKHealthStore.isHealthDataAvailable() == true else {
             unavailable.setText("not available")
@@ -61,59 +49,15 @@ class InterfaceController: WKInterfaceController {
             if success == false {
                 self.displayNotAllowed()
             }
-        
-    }
+        }
         self.unavailable.setText("Heart Rate: Int")
         //handleHealthKit()
-        
-        
-
     }
-    
-    
-
-    
-    
-    
-    
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-    
-    
-    
-//    private func handleHealthKit(){
-//
-//
-//        if self.healthStore.isHealthDataAvailable() {
-//
-//            let healthStore = HKHealthStore()
-//            let heartRateQuantityType = HKObjectType.quantityType(forIdentifier: .heartRate)!
-//            let allTypes = Set([HKObjectType.workoutType(),
-//                                heartRateQuantityType
-//                ])
-//
-//            healthStore.requestAuthorization(toShare: nil, read: allTypes) { (success, error) -> Void in
-//                if success == false {
-//                    print("Error")
-//                }
-//
-//
-//                //From here, integrate heart rate controller? (interface)
-//
-//                self.unavailable.setText("Heart Rate: Int")
-//
-//        }
-//
-//        }
-//        else{
-//            self.unavailable.setText("No Data Available")
-//        }
-//
-//
-//    }
     
     @IBAction func workoutBtnTapped() {
         if (self.workoutInSession){
@@ -129,11 +73,9 @@ class InterfaceController: WKInterfaceController {
             self.startStopButton.setTitle("Stop")
             startWorkout()
         }
-
     }
 
     func startWorkout() {
-        
         // If we have already started the workout, then do nothing.
         if (session != nil) {
             return
@@ -150,7 +92,6 @@ class InterfaceController: WKInterfaceController {
         } catch {
             fatalError("Unable to create the workout session!")
         }
-        
         healthStore.start(self.session!)
     }
     
@@ -174,8 +115,6 @@ class InterfaceController: WKInterfaceController {
     }
     
     func createHeartRateStreamingQuery(_ workoutStartDate: Date) -> HKQuery? {
-        
-        
         guard let quantityType = HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.heartRate) else { return nil }
         let datePredicate = HKQuery.predicateForSamples(withStart: workoutStartDate, end: nil, options: .strictEndDate )
         //let devicePredicate = HKQuery.predicateForObjects(from: [HKDevice.local()])
@@ -224,14 +163,12 @@ class InterfaceController: WKInterfaceController {
                 self.animate(withDuration: 0.5, animations: {
                     self.heart.setWidth(50)
                     self.heart.setHeight(80)
-                })            }
-            
-            
+                })
+            }
         }
     }
-    
-
 }
+
 extension InterfaceController: HKWorkoutSessionDelegate{
     func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKWorkoutSessionState, from fromState: HKWorkoutSessionState, date: Date) {
         switch toState {
