@@ -23,7 +23,9 @@ class InterfaceController: WKInterfaceController {
     var currenQuery : HKQuery?
     var workoutInSession = false
     
+    
     @IBOutlet weak var heart: WKInterfaceImage!
+    
     @IBOutlet weak var label: WKInterfaceLabel!
     @IBOutlet weak var unavailable: WKInterfaceLabel!
     @IBOutlet weak var startStopButton: WKInterfaceButton!
@@ -212,6 +214,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     func animateHeart() {
+        //
         self.animate(withDuration: 0.5) {
             self.heart.setWidth(60)
             self.heart.setHeight(90)

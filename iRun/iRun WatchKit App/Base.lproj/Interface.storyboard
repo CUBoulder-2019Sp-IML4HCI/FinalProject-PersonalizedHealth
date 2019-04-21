@@ -14,9 +14,9 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="iRun_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="128" height="31" alignment="center" text="Label" id="3B5-Ah-F7b"/>
-                        <label width="136" height="27" alignment="left" text="Label" id="aVc-eZ-wQ2"/>
-                        <imageView alignment="left" id="XnJ-KO-LOd"/>
+                        <label width="136" height="31" alignment="center" text="Label" id="3B5-Ah-F7b"/>
+                        <label width="136" height="27" alignment="center" text="Label" id="aVc-eZ-wQ2"/>
+                        <imageView alignment="center" image="heart" id="XnJ-KO-LOd"/>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Start Workout" id="1JM-tP-eXd">
                             <connections>
                                 <action selector="workoutBtnTapped" destination="AgC-eL-Hgc" id="QUT-R7-stZ"/>
@@ -24,13 +24,14 @@
                         </button>
                     </items>
                     <connections>
-                        <outlet property="heart" destination="XnJ-KO-LOd" id="TG5-eK-SMJ"/>
+                        <outlet property="heart" destination="XnJ-KO-LOd" id="hEF-JN-zUi"/>
                         <outlet property="label" destination="aVc-eZ-wQ2" id="Q0l-gt-ZGB"/>
                         <outlet property="startStopButton" destination="1JM-tP-eXd" id="rup-Em-lA9"/>
                         <outlet property="unavailable" destination="3B5-Ah-F7b" id="Z6r-OX-e6b"/>
                     </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="34" y="31.5"/>
         </scene>
     </scenes>
 </document>
