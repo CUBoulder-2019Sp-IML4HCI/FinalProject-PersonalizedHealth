@@ -54,7 +54,7 @@ class RegisterPageViewController: UIViewController{
         let usersHeight = Int(Height.text!)
         let usersRecentMilesRan = Int(MilesRanLastWeek.text!)
         let usersRecentMilesWalked = Int(MilesRanLastWeek.text!)
-        print(usersName)
+        
         
         /*
             Save / Store the data
@@ -72,11 +72,10 @@ class RegisterPageViewController: UIViewController{
         defaults.set("true", forKey:"userHasData")
         
         
-
-        
         completeRegistrationAlert(myMessage: "Regitration Successful!")
-        //performSegue(withIdentifier: "returnSegue", sender: nil)
     }
+    
+    //HELPER FUNCTIONS FOR ALERTS AND SEGUES
     
     
     //Dynamic function to take a string and use it as the alert message. 
@@ -91,20 +90,21 @@ class RegisterPageViewController: UIViewController{
         
         
     }
-    
+    //Dynamic alert to display a message to the user that they have registered and
+    //segue (move) them onward to their stats page.
     func completeRegistrationAlert(myMessage:String){
-        var alert = UIAlertController(title:"loginAlert", message: myMessage, preferredStyle: UIAlertController.Style.alert)
+        
+        var alert = UIAlertController(title:"Welcome!", message: myMessage, preferredStyle: UIAlertController.Style.alert)
         
         let finalizeAction = UIAlertAction(title:"Ok", style: UIAlertAction.Style.default){
             action in
             self.dismiss(animated:true, completion: nil)
+            self.performSegue(withIdentifier: "showStatsSegue", sender: nil)
         }
         
         alert.addAction(finalizeAction)
         
-        self.present(alert, animated: true, completion: {
-           self.performSegue(withIdentifier: "showStatsSegue", sender: nil)
-        })
+        self.present(alert, animated: true, completion: nil)
         
     }
     
