@@ -29,6 +29,7 @@ class StatsPageViewController: UIViewController {
     
     var tempVal = 0.0
     
+    var tempHR = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,6 +94,17 @@ class StatsPageViewController: UIViewController {
                     self.recentMilesWalked.text = "You've Walked: " + String(self.tempVal) + " steps in your last workout!"
                 }
             }
+            
+            
+            
+            
+            //HeartRate
+            getLastHeartRate{ (result) in
+                DispatchQueue.main.async{
+                    self.tempHR = result
+                        print(self.tempHR)
+                }
+            }
                 
                 
                 
@@ -103,6 +115,49 @@ class StatsPageViewController: UIViewController {
         
         
     }
+    
+    func getLastHeartRate(completion: @escaping (Double) -> Void){
+        let startTime = defaults.object(forKey:"startTime") as! Date
+        //let startTime = Calendar.current.startOfDay(for: Date())
+        let finishTime = defaults.object(forKey:"finishTime") as! Date
+        print(startTime)
+        print(finishTime)
+        let predicate = HKQuery.predicateForSamples(withStart: startTime, end: finishTime)
+        
+        let stepsQuantityType = HKQuantityType.quantityType(forIdentifier: .stepCount)!
+        let walkRunType = HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!
+        let heartRateType = HKQuantityType.quantityType(forIdentifier: .heartRate)!
+        
+        let querySteps = HKStatisticsQuery(quantityType: heartRateType, quantitySamplePredicate: predicate, options: .discreteAverage){
+            
+            (_, result, error) in
+            var resultCount = 0.0
+            
+            guard let result = result else{
+                print("failed to fetch heart rate")
+                completion(resultCount)
+                return
+            }
+            var quantity: HKQuantity? = result.averageQuantity()
+            var beats: Double? = quantity?.doubleValue(for: HKUnit.count().unitDivided(by: HKUnit.minute()))
+            
+            
+       
+            DispatchQueue.main.async {
+                completion(beats!)
+            }
+            }
+            
+//            if let sum = result.sumQuantity() {
+//                resultCount = sum.doubleValue(for: HKUnit.count())
+//            }
+            
+        healthStore.execute(querySteps)
+        }
+    
+    
+        
+    
     
     func getLastWorkoutSteps(completion: @escaping (Double) -> Void){
         let startTime = defaults.object(forKey:"startTime") as! Date
