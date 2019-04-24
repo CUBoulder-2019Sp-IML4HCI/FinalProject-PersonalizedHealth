@@ -90,11 +90,14 @@ class CurrentPlanViewController: UIViewController {
             //finish the current workout
             self.currentWorkout = false
             self.startStopButton.setTitle("Start Workout", for: .normal)
+            defaults.set("true", forKey:"userHasDoneWorkout")
+            defaults.set(Date(), forKey:"finishTime")
             self.performSegue(withIdentifier: "userFeedback", sender: nil)
         }
             else{
                 self.currentWorkout = true
                 self.startStopButton.setTitle("End Workout", for: .normal)
+                defaults.set(Date(), forKey:"startTime")
             
             }
 
