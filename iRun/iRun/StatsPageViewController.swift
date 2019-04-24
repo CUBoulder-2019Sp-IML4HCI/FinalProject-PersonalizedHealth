@@ -62,17 +62,19 @@ class StatsPageViewController: UIViewController {
             
             
             name.text = "Welcome " + usersName!
-            
-            
+            age.text = "Age: " + usersAge!
             weight.text = "Weight: " + usersWeight! + "lbs"
-            
             height.text = "Height: " + usersHeight! + "cm"
+            
+            
+           
+            
             
             recentMilesRan.text = "You've ran: " + usersRecentMilesRan! + " miles in the last month!"
             
             recentMilesWalked.text = "You've Walked: " + usersRecentMilesWalked! + " miles in the last month!"
             
-            age.text = "Age: " + usersAge!
+          
             
         }   else{
             print("No data avaialable")

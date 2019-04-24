@@ -7,19 +7,43 @@
 //
 
 import UIKit
+import HealthKit
 
 class CurrentPlanViewController: UIViewController {
-    
+
+//    """
+//    Outlets / Labels for UI
+//        ModelHeader: Current Recommendation Number
+//
+//    """
     @IBOutlet weak var ModelHeader: UILabel!
     
+    
+    @IBOutlet weak var startStopButton: UIButton!
+    
+    
+    
+    
+//    """
+//    Delegate Variables
+//    """
     let defaults = UserDefaults.standard
     
-   
+    
+    
+    
+    
+//    """
+//    Boolean Checks
+//    """
+    var currentWorkout = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        
+        updateUserValues()
         showPrediction()
     }
     
@@ -55,6 +79,34 @@ class CurrentPlanViewController: UIViewController {
         }
         
     }
+    
+    func updateUserValues(){
+       print("HI")
+        
+    }
+    
+    @IBAction func startWorkoutButtonTapped(_ sender: Any) {
+        if (self.currentWorkout){
+            //finish the current workout
+            self.currentWorkout = false
+            self.startStopButton.setTitle("Start Workout", for: .normal)
+            self.performSegue(withIdentifier: "userFeedback", sender: nil)
+        }
+            else{
+                self.currentWorkout = true
+                self.startStopButton.setTitle("End Workout", for: .normal)
+            
+            }
+
+
+    }
+    func getHeartRate() -> Double? {
+        var mostRecentHeartRate: Double?
+        
+        
+        
+        return mostRecentHeartRate
+    }
     /*
     // MARK: - Navigation
 
@@ -64,5 +116,6 @@ class CurrentPlanViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+ 
 }

@@ -10,6 +10,7 @@
 		67134D6D22430F4200620183 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67134D6C22430F4200620183 /* HealthKit.framework */; };
 		673190452267D75B006B2431 /* CurrentPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673190442267D75B006B2431 /* CurrentPlanViewController.swift */; };
 		673190472267D9FC006B2431 /* StageCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 673190462267D9FC006B2431 /* StageCalculator.mlmodel */; };
+		67350B7B226FD3DA00F39E1A /* feedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67350B7A226FD3DA00F39E1A /* feedbackViewController.swift */; };
 		6780923B2255BA180012726C /* StatsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6780923A2255BA180012726C /* StatsPageViewController.swift */; };
 		678D452E2241640300EA7018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678D452D2241640300EA7018 /* AppDelegate.swift */; };
 		678D45302241640300EA7018 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678D452F2241640300EA7018 /* ViewController.swift */; };
@@ -95,6 +96,8 @@
 		67134D6C22430F4200620183 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		673190442267D75B006B2431 /* CurrentPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPlanViewController.swift; sourceTree = "<group>"; };
 		673190462267D9FC006B2431 /* StageCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = StageCalculator.mlmodel; sourceTree = "<group>"; };
+		67350B77226FC35F00F39E1A /* iRun WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iRun WatchKit App.entitlements"; sourceTree = "<group>"; };
+		67350B7A226FD3DA00F39E1A /* feedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedbackViewController.swift; sourceTree = "<group>"; };
 		6780923A2255BA180012726C /* StatsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsPageViewController.swift; sourceTree = "<group>"; };
 		678D452A2241640300EA7018 /* iRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		678D452D2241640300EA7018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +207,7 @@
 				6780923A2255BA180012726C /* StatsPageViewController.swift */,
 				67AFDD40225D122100C59540 /* TabOneRecentViewController.swift */,
 				673190442267D75B006B2431 /* CurrentPlanViewController.swift */,
+				67350B7A226FD3DA00F39E1A /* feedbackViewController.swift */,
 			);
 			path = iRun;
 			sourceTree = "<group>";
@@ -211,6 +215,7 @@
 		678D45402241640400EA7018 /* iRun WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				67350B77226FC35F00F39E1A /* iRun WatchKit App.entitlements */,
 				678D45412241640400EA7018 /* Interface.storyboard */,
 				678D45442241640500EA7018 /* Assets.xcassets */,
 				678D45462241640500EA7018 /* Info.plist */,
@@ -365,6 +370,9 @@
 					678D45292241640300EA7018 = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.HealthKit = {
 								enabled = 1;
 							};
@@ -372,10 +380,18 @@
 					};
 					678D453B2241640400EA7018 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					678D454A2241640500EA7018 = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
 							com.apple.HealthKit.watchos = {
 								enabled = 1;
 							};
@@ -455,6 +471,7 @@
 				673190472267D9FC006B2431 /* StageCalculator.mlmodel in Sources */,
 				67AFDD37225C447100C59540 /* IQKeyboardReturnKeyHandler.swift in Sources */,
 				67AFDD38225C447100C59540 /* IQKeyboardManager.swift in Sources */,
+				67350B7B226FD3DA00F39E1A /* feedbackViewController.swift in Sources */,
 				67AFDD3A225C447100C59540 /* IQUIViewController+Additions.swift in Sources */,
 				67AFDD33225C447100C59540 /* IQInvocation.swift in Sources */,
 				67AFDD3D225C447100C59540 /* IQNSArray+Sort.swift in Sources */,
@@ -686,6 +703,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iRun WatchKit App/iRun WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XXY825S34M;
 				IBSC_MODULE = iRun_WatchKit_Extension;
@@ -705,6 +723,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iRun WatchKit App/iRun WatchKit App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XXY825S34M;
 				IBSC_MODULE = iRun_WatchKit_Extension;

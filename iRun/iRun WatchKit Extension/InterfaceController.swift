@@ -13,7 +13,7 @@ import HealthKit
 class InterfaceController: WKInterfaceController {
 
     
-    
+   
     
     let heartRateUnit = HKUnit(from: "count/min")
     let healthStore = HKHealthStore()
@@ -33,8 +33,8 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
 
+
         
-     
         
         // Configure interface objects here.
     }
@@ -44,6 +44,7 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         
         super.willActivate()
+        
         
         
         
