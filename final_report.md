@@ -36,8 +36,6 @@ Lastly, the third challenge we met was finding suitable data for a regression mo
 - Deployment - iPhone, Apple watch
 - IDE - Xcode 10.0
 - Language - Swift 4.0
-- Risks of failure
-- Risks already identified
 
 ## Risks of Failure
 Risks already identified:
