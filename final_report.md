@@ -31,16 +31,15 @@ Another challenge we struggled with was creating a ‘one size fits all’ routi
 
 Lastly, the third challenge we met was finding suitable data for a regression model to realistically output recommendations. Given the input data such as age and weight etc… are intuitively good indicators of the ability one has for running, there are very difficult to find in data sets that also have distance ran and the pace as well. Furthermore, even if we have found a data set such as that, we would most likely be dealing with a data set that is exclusive to experienced runners. We want our model to be trained on data sets that include all levels of running in order to be able to get a use case where a user can have never ran before and be able to take advantage of our application.
 
-
 ## The Technologies
 - Apple Developer Frameworks - HealthKit, CreateML, CoreML
 - Deployment - iPhone, Apple watch
 - IDE - Xcode 10.0
 - Language - Swift 4.0
 - Risks of failure
+- Risks already identified
 
-## Risks already identified
-ML Model
+## ML Model
 We ended up taking the Couch To 5k approach and transforming it into set of stages where each stage is represented by 4 features: Absolute time spent jogging, Fractional time spent jogging, Absolute distance jogged and Fractional distance jogged.
 We then took the 12 data points (we got from 12 stages) and trained a Decision Tree on it using CreateML such that, given 4 features the model would predict the stage user is at.
 Using this stage, we can examine user’s progress and give recommendations.
@@ -58,7 +57,6 @@ While we were still on the learning curve of iOS development, we began iterating
 This proved to be a useful technique by the time we approached the final deadlines.
 
 ## Ethical questions
-
 The only ethical question that were raised was that our application could be providing unhealthy recommendations. If our model is over/under fit we could potentially provide someone with an overly intense running routine that could cause physical harm. If our app tells someone they should be able to run 10 miles on their first run and they attempt it, they could injure themselves based off of our recommendations.
 Open Source and Closed Source Components
 Tensorflow (partly open sourced)
