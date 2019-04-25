@@ -72,18 +72,18 @@ Running Heart Rate Zone (link)
 ## ANNEXURE A
 Initial Sign up screen and their uses:
 
-Full Name: Referencing throughout application
-Age: To calculate heart rate zone
-Grant Permissions: For accessing healthkit data
+- Full Name: Referencing throughout application
+- Age: To calculate heart rate zone
+- Grant Permissions: For accessing healthkit data
 
 ## ANNEXURE B
 Here are the options presented for User Feedback: Rating between 1 to 5 where 1 is Too Easy and 5 is Too Difficult.
 
 Here are the heart rate zone[4] descriptions:
-Zone 1: 50 to 60 percent of maximum heart rate
-Zone 2: 60 to 70 percent of maximum heart rate
-Zone 3: 70 to 80 percent of maximum heart rate
-Zone 4: 80 to 90 percent of maximum heart rate
-Zone 5: 90 to 100 percent of maximum heart rate
+- Zone 1: 50 to 60 percent of maximum heart rate
+- Zone 2: 60 to 70 percent of maximum heart rate
+- Zone 3: 70 to 80 percent of maximum heart rate
+- Zone 4: 80 to 90 percent of maximum heart rate
+- Zone 5: 90 to 100 percent of maximum heart rate
 
 Ideally for long runners, the heart rate zone must be between 1 and 2.
