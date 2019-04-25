@@ -21,7 +21,8 @@ The user will initially use a third party data collection application such as Ni
 After a workout has been recorded, the user will be able to get a recommendation from the model that will output a discrete range of numbers associative to a text-based recommendation.
 
 The user will then be able to fulfill the goals set by the recommendation until all goals are met. Once all goals are met, the user will then either be able to say that the recent workout recommendation was too easy, normal or too difficult. Based on the users’ response, the model will be able to get feedback and retrain based on the data that the user has and the response given.
-Challenges
+
+## Challenges
 Initially, we wanted the model to collect data during the run(distance traveled vs. goal, heart rate, pace) and adjust accordingly. We wanted our model to be able to adjust itself based on user performance. For example, if the user crushes the first goal given by the app, we want it to adjust and give the user a much more rigorous running plan. If the user struggles to reach the goal or didn’t complete the run, it should adjust accordingly to give a more reasonable goal. Ideally the app would underestimate rather than overestimate the user so as to not demotivate them!
 
 However, due to the difficult dealing with workout sessions and healthkit, collection of streaming data proved to be very difficult. In future iterations of this application, this would definitely be one of the challenges that would have be take priority. The pre-processing of data in swift in addition to what was mentioned proved to be quite difficult as well. Once data was returned from the query via the HealthKit framework, the data would require quite a bit of processing in order to correctly fit it to the desired data type.
