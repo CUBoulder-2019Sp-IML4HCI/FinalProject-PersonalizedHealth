@@ -92,15 +92,19 @@
       - Gamify by 'rewarding' the user with progress bars and completion congratulations
     - Tried to replace my old loaner mac with a newer one, the CS/ATLS department only have bricks...
       - CU mac labs only support xcode 8, need 10
-      
+
 ### Week 15 (4/21-4/27)
 - [Personalized Health - Week 15 Video update](https://youtu.be/U0uOkQCW8_s)
 
 - Robert Renecker ([@robertrenecker](https://github.com/robertrenecker))
-  - 
+  - Updated graphics for UI
+  - Enhanced architecture so that we could track health kit variables from past workouts
+  - Setup query model to query everytime we need a recommendation the required input variables to push to our models
+  - Created and setup feedback page + data flow.
+  - Talked with Jacob and Akshit for future UI in the final week. Updating it using libraries found by Jacob should prove much more aesthetically pleasing for the user. 
 - Akshit Arora ([@aroraakshit](http://github.com/aroraakshit))
   -
 - Jacob Munoz ([@jamu0075](https://github.com/jamu0075))
-  - Worked with Robert and Akshit to determine what UI elements are essential which ones are an unnecessary challenge. 
+  - Worked with Robert and Akshit to determine what UI elements are essential which ones are an unnecessary challenge.
   - Passed off final UX along with helpful iOS UI library's to robert.
   - Final UX agreed upon by the team.
