@@ -39,6 +39,26 @@ Lastly, the third challenge we met was finding suitable data for a regression mo
 - Risks of failure
 - Risks already identified
 
+## Risks of Failure
+Risks already identified:
+- ML Model
+  - We ended up taking the Couch To 5k approach and transforming it into set of stages where each stage is represented by 4 features: Absolute time spent jogging, Fractional time spent jogging, Absolute distance jogged and Fractional distance jogged.
+  - We then took the 12 data points (we got from 12 stages) and trained a Decision Tree on it using CreateML such that, given 4 features the model would predict the stage user is at.
+  - Using this stage, we can examine user’s progress and give recommendations.
+- Fitbit -> Apple watch
+  - Decided to use apple watch instead after many peer recommendations.
+  - Allowed us to develop a mobile application rather than a web app
+  - Allowed us to access healthkit data
+  - User can start/stop workout
+- Risks that we faced later on
+  - End User Trainable
+    - To build this feature, we looked at using user’s feedback about the workout and the heart rate zone as described in Annexure B
+    - Using both the inputs, we can adjust the stage predicted from Decision Tree classifier, which in turn affects the progress of the user. Thus making it end-user trainable.
+  - Outsourcing Interaction Design to Figma
+    - While we were still on the learning curve of iOS development, we began iterating interaction design on Figma that had no prerequisite whatsoever.
+    - This proved to be a useful technique by the time we approached the final deadlines.
+
+
 ## ML Model
 We ended up taking the Couch To 5k approach and transforming it into set of stages where each stage is represented by 4 features: Absolute time spent jogging, Fractional time spent jogging, Absolute distance jogged and Fractional distance jogged.
 We then took the 12 data points (we got from 12 stages) and trained a Decision Tree on it using CreateML such that, given 4 features the model would predict the stage user is at.
