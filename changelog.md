@@ -103,7 +103,9 @@
   - Created and setup feedback page + data flow.
   - Talked with Jacob and Akshit for future UI in the final week. Updating it using libraries found by Jacob should prove much more aesthetically pleasing for the user. 
 - Akshit Arora ([@aroraakshit](http://github.com/aroraakshit))
-  -
+  - Worked on refining app architecture and finalized the interaction design to meet the upcoming deadlines
+  - Pivot the app to only reading healthkit datastore instead of writing and reading to it
+  - Changed the ML model based on data available from querying Apple's healthkit framework
 - Jacob Munoz ([@jamu0075](https://github.com/jamu0075))
   - Worked with Robert and Akshit to determine what UI elements are essential which ones are an unnecessary challenge.
   - Passed off final UX along with helpful iOS UI library's to robert.
