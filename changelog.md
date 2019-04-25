@@ -77,15 +77,15 @@
 - Akshit Arora ([@aroraakshit](http://github.com/aroraakshit))
   - Finalized ML task: For each workout predict what stage user is in based on time and distance covered while jogging and average heart rate zone in the workout. Checkout [mldev branch](https://github.com/CUBoulder-2019Sp-IML4HCI/FinalProject-PersonalizedHealth/tree/mldev/mldev).
   - Simulated a [dataset](https://github.com/CUBoulder-2019Sp-IML4HCI/FinalProject-PersonalizedHealth/blob/mldev/mldev/simulated.csv) to reflect the above stated ML task based on [Couch to 5k](https://crcphp.arizona.edu/sites/default/files/images/Couch-to-5k%20Running%20Plan.pdf) plan.
-  - Trained a [decision tree classifier on sklearn](https://github.com/CUBoulder-2019Sp-IML4HCI/FinalProject-PersonalizedHealth/blob/mldev/mldev/model_prep.ipynb) using 4 features: 
+  - Trained a [decision tree classifier on sklearn](https://github.com/CUBoulder-2019Sp-IML4HCI/FinalProject-PersonalizedHealth/blob/mldev/mldev/model_prep.ipynb) using 4 features:
     1. Absolute Jogging Time
     2. Fraction Jogging Time (out of walking and jogging combined)
     3. Absolute Jogging Distance Covered
     4. Fraction Jogging Distance Covered (out of walking and jogging combined)
-    [Link to Decision Tree picture](https://github.com/CUBoulder-2019Sp-IML4HCI/FinalProject-PersonalizedHealth/blob/mldev/mldev/tree.png). 
+    [Link to Decision Tree picture](https://github.com/CUBoulder-2019Sp-IML4HCI/FinalProject-PersonalizedHealth/blob/mldev/mldev/tree.png).
   - Ran into errors while exporting sklearn's classifier to .mlmodel files using Apple's [CoreMLTools](https://github.com/apple/coremltools). Therefore, wrote a [CreateML script](https://github.com/CUBoulder-2019Sp-IML4HCI/FinalProject-PersonalizedHealth/blob/mldev/mldev/CreateML.playground/Contents.swift) to export the decision tree classifier
   - Worked on a new feature called 'HeartRateZone' as described [here](https://www.healthline.com/health/running-heart-rate#heart-rate-training).
-  
+
  - Jacob Munoz ([@jamu0075](https://github.com/jamu0075))
     - Designed our new [MVP](https://www.figma.com/file/DUEEdmnHawuhMYVCu4EsruqB/Personalized-Health?node-id=0%3A1)
       - Attempting to keep people engaged with the application by providing multiple indicators of progress(Visualization for total goal progress, user interaction for completing goals, tracking previous goals/miles)
