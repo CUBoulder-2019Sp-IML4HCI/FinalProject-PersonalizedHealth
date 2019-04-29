@@ -8,35 +8,54 @@
 
 import UIKit
 import HealthKit
+import FoldingCell
+
 
 class StatsPageViewController: UIViewController {
+    let recommendationModel = RecommendationModel()
+    
     let healthStore = HKHealthStore()
     
     let defaults = UserDefaults.standard
     
     @IBOutlet weak var name: UILabel!
     
-    @IBOutlet weak var age: UILabel!
-    
-    @IBOutlet weak var height: UILabel!
-    
-    @IBOutlet weak var weight: UILabel!
-    
-    @IBOutlet weak var recentMilesRan: UILabel!
-    
-    @IBOutlet weak var recentMilesWalked: UILabel!
+    @IBOutlet weak var recentDistance: UILabel!
     
     
-    var tempVal = 0.0
+    @IBOutlet weak var recentPace: UILabel!
+    
+    @IBOutlet weak var recentHR: UILabel!
+    
+    @IBOutlet weak var curRecommendationHeader: UILabel!
+    
+    @IBOutlet weak var curRecommendationImage: UIImageView!
     
     var tempHR = 0.0
+    var recImages: [UIImage] = []
+
+    
+
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        recImages.append(UIImage(named: "rec1.png")!)
+        recImages.append(UIImage(named: "rec2.png")!)
+        recImages.append(UIImage(named: "rec3.png")!)
+        recImages.append(UIImage(named: "rec4.png")!)
+        recImages.append(UIImage(named: "rec5.png")!)
+        recImages.append(UIImage(named: "rec6.png")!)
+        recImages.append(UIImage(named: "rec7.png")!)
+        recImages.append(UIImage(named: "rec8.png")!)
+        recImages.append(UIImage(named: "rec9.png")!)
         presentData()
         // Do any additional setup after loading the view.
         // 1. Show tables for current recommendation
         // 2. Recommendation submit function
+        
+        
+        
         
     }
     
@@ -45,26 +64,17 @@ class StatsPageViewController: UIViewController {
     func presentData(){
         if hasUserData() == "true" {
             let usersName =  defaults.string(forKey: "usersName")
-            let usersAge =  defaults.string(forKey: "usersAge")
-            
-            let usersHeight = defaults.string(forKey: "usersHeight")
-            
-            let usersWeight = defaults.string(forKey: "usersWeight")
-            
-            let usersRecentMilesRan = defaults.string(forKey: "usersRecentMilesRan")
-            
-            let usersRecentMilesWalked = defaults.string(forKey: "usersRecentMilesWalked")
             
             
             
             name.text = "Welcome " + usersName!
-            age.text = "Age: " + usersAge!
-            weight.text = "Weight: " + usersWeight! + "lbs"
-            height.text = "Height: " + usersHeight! + "cm"
-
-            recentMilesRan.text = "You've ran: " + usersRecentMilesRan! + " miles in the last month!"
             
-            recentMilesWalked.text = "You've Walked: " + String(tempVal) + " steps in your last workout!"
+
+            let curRec = defaults.integer(forKey: "recommendation")
+    
+            curRecommendationHeader.text = "Workout " + String(curRec)
+            curRecommendationImage.image = recImages[curRec]
+            
             
           
             
@@ -84,28 +94,58 @@ class StatsPageViewController: UIViewController {
     
     
     @IBAction func getRecommendation(_ sender: Any) {
-        
+        var tempDistance = ""
         //Get Times of last workout
         if hasDoneOneWorkout() == "true" {
-            
-            getLastWorkoutSteps{ (result) in
-                DispatchQueue.main.async{
-                    self.tempVal = result
-                    self.recentMilesWalked.text = "You've Walked: " + String(self.tempVal) + " steps in your last workout!"
-                }
-            }
-            
-            
-            
             
             //HeartRate
             getLastHeartRate{ (result) in
                 DispatchQueue.main.async{
-                    self.tempHR = result
-                        print(self.tempHR)
+        
+                    self.recentHR.text = "Last workout's average heartrate was: " + String(result)
+                    
                 }
             }
+            
+            //Distance
+            getLastWorkoutDistance{ (result) in
+                DispatchQueue.main.async{
+                    self.recentDistance.text = String(result)
+                    self.defaults.set(result, forKey: "recentDistance")
+                }
+            }
+            
+            
+            
+            //Get the recommendation via our model
+            do{
+                //Get total time of last workout in minutes
+                let startTime = defaults.object(forKey:"startTime") as! Date
+                let finishTime = defaults.object(forKey:"finishTime") as! Date
+                let distanceBetweenDates: TimeInterval? = finishTime.timeIntervalSince(startTime)
+                let minutesInAnHour: Double = 60
+                let minutesBetweenDates = distanceBetweenDates! / minutesInAnHour
+           
+                //Get pace
+                let recentDistanceDouble = defaults.double(forKey: "recentDistance")
+                let pace = minutesBetweenDates / recentDistanceDouble
+                recentPace.text = "You're recent pace for the last workout was: " + String(pace)
                 
+                //Get prediction
+                let prediction = try recommendationModel.prediction(tot_time: minutesBetweenDates, tot_dist: recentDistanceDouble, pace: pace )
+                
+                let integerPrediction = prediction.stage
+                
+                //Set defaults (persisted) recommendation to the new predictin
+                defaults.set(integerPrediction, forKey: "recommendation")
+                print(integerPrediction)
+                
+                
+                
+            }
+            catch{
+                print("Unable to perform inference")
+            }
                 
                 
             }
@@ -116,16 +156,25 @@ class StatsPageViewController: UIViewController {
         
     }
     
+//    func populateRecommendationTable() -> Recommendation {
+//
+//    }
+    
+    
+    
+    
+    
+    
+    //Helper/Service functions for getting health data.
+    
     func getLastHeartRate(completion: @escaping (Double) -> Void){
         let startTime = defaults.object(forKey:"startTime") as! Date
         //let startTime = Calendar.current.startOfDay(for: Date())
         let finishTime = defaults.object(forKey:"finishTime") as! Date
-        print(startTime)
-        print(finishTime)
+  
         let predicate = HKQuery.predicateForSamples(withStart: startTime, end: finishTime)
         
-        let stepsQuantityType = HKQuantityType.quantityType(forIdentifier: .stepCount)!
-        let walkRunType = HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!
+    
         let heartRateType = HKQuantityType.quantityType(forIdentifier: .heartRate)!
         
         let querySteps = HKStatisticsQuery(quantityType: heartRateType, quantitySamplePredicate: predicate, options: .discreteAverage){
@@ -148,28 +197,18 @@ class StatsPageViewController: UIViewController {
             }
             }
             
-//            if let sum = result.sumQuantity() {
-//                resultCount = sum.doubleValue(for: HKUnit.count())
-//            }
-            
         healthStore.execute(querySteps)
         }
-    
-    
-        
     
     
     func getLastWorkoutSteps(completion: @escaping (Double) -> Void){
         let startTime = defaults.object(forKey:"startTime") as! Date
         //let startTime = Calendar.current.startOfDay(for: Date())
         let finishTime = defaults.object(forKey:"finishTime") as! Date
-        print(startTime)
-        print(finishTime)
+  
         let predicate = HKQuery.predicateForSamples(withStart: startTime, end: finishTime)
         
         let stepsQuantityType = HKQuantityType.quantityType(forIdentifier: .stepCount)!
-        let walkRunType = HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)
-        let heartRateType = HKQuantityType.quantityType(forIdentifier: .heartRate)
         
         let querySteps = HKStatisticsQuery(quantityType: stepsQuantityType, quantitySamplePredicate: predicate, options: .cumulativeSum){
             
@@ -194,7 +233,53 @@ class StatsPageViewController: UIViewController {
     }
     
     
+    func getLastWorkoutDistance(completion: @escaping (Double) -> Void){
+        let startTime = defaults.object(forKey:"startTime") as! Date
+        //let startTime = Calendar.current.startOfDay(for: Date())
+        let finishTime = defaults.object(forKey:"finishTime") as! Date
+        let predicate = HKQuery.predicateForSamples(withStart: startTime, end: finishTime)
+        
+
+        let walkRunType = HKQuantityType.quantityType(forIdentifier: .distanceWalkingRunning)!
+     
+        
+        let querySteps = HKStatisticsQuery(quantityType: walkRunType, quantitySamplePredicate: predicate, options: .cumulativeSum){
+            
+            (_, result, error) in
+            var resultCount = 0.0
+            
+            guard let result = result else{
+                print("failed to fetch steps")
+                completion(resultCount)
+                return
+            }
+            
+            if let sum = result.sumQuantity() {
+                resultCount = sum.doubleValue(for: HKUnit.mile())
+            }
+            
+            DispatchQueue.main.async {
+                completion(resultCount)
+            }
+        }
+        healthStore.execute(querySteps)
+    }
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //Helper Functions for boolean checking
     
     func hasDoneOneWorkout() -> String{
         if let hasDoneWorkout = defaults.string(forKey: "userHasDoneWorkout"){
@@ -215,4 +300,7 @@ class StatsPageViewController: UIViewController {
         }
        
     }
+
+
+
 }

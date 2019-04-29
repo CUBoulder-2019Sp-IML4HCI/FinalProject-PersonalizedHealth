@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CF04265D0E0F4B704D09CDA /* Pods_iRun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01F4E4667ACB9B209469C185 /* Pods_iRun.framework */; };
+		51C1C56B2FA13B9FC38BBCFD /* libPods-iRun WatchKit App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB8F4A98BA37011C5ACDC44 /* libPods-iRun WatchKit App.a */; };
 		67134D6D22430F4200620183 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67134D6C22430F4200620183 /* HealthKit.framework */; };
 		673190452267D75B006B2431 /* CurrentPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673190442267D75B006B2431 /* CurrentPlanViewController.swift */; };
 		673190472267D9FC006B2431 /* StageCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 673190462267D9FC006B2431 /* StageCalculator.mlmodel */; };
 		67350B7B226FD3DA00F39E1A /* feedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67350B7A226FD3DA00F39E1A /* feedbackViewController.swift */; };
+		676ED5902276778F0037AE83 /* RecommendationModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 676ED58F2276778F0037AE83 /* RecommendationModel.mlmodel */; };
 		6780923B2255BA180012726C /* StatsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6780923A2255BA180012726C /* StatsPageViewController.swift */; };
 		678D452E2241640300EA7018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678D452D2241640300EA7018 /* AppDelegate.swift */; };
 		678D45302241640300EA7018 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678D452F2241640300EA7018 /* ViewController.swift */; };
@@ -46,6 +49,7 @@
 		67AFDD43225D165C00C59540 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 67AFDD42225D165B00C59540 /* SleepCalculator.mlmodel */; };
 		67AFDD45225ECEA000C59540 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AFDD44225ECEA000C59540 /* HealthKit.framework */; };
 		67B7AE1B225402AC00B7C105 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B7AE1A225402AC00B7C105 /* RegisterPageViewController.swift */; };
+		F5527482B3BCAC987D1C20DF /* Pods_iRun_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF7C3C0C2187113A93BDC1D /* Pods_iRun_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +95,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		01F4E4667ACB9B209469C185 /* Pods_iRun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iRun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FD795DE9EBB1FEF737C8F9B /* Pods-iRun WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iRun WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-iRun WatchKit App/Pods-iRun WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		459588B9A2404B255280A202 /* Pods-iRun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iRun.debug.xcconfig"; path = "Target Support Files/Pods-iRun/Pods-iRun.debug.xcconfig"; sourceTree = "<group>"; };
+		4CF7C3C0C2187113A93BDC1D /* Pods_iRun_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iRun_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6708431C2241DEFD00558BCE /* iRun.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iRun.entitlements; sourceTree = "<group>"; };
 		6708431D2241E04300558BCE /* iRun WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iRun WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		67134D6C22430F4200620183 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -98,6 +106,7 @@
 		673190462267D9FC006B2431 /* StageCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = StageCalculator.mlmodel; sourceTree = "<group>"; };
 		67350B77226FC35F00F39E1A /* iRun WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iRun WatchKit App.entitlements"; sourceTree = "<group>"; };
 		67350B7A226FD3DA00F39E1A /* feedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = feedbackViewController.swift; sourceTree = "<group>"; };
+		676ED58F2276778F0037AE83 /* RecommendationModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = RecommendationModel.mlmodel; path = "../../../../../../../../Downloads/FinalProject-PersonalizedHealth-mldev/mldev/RecommendationModel.mlmodel"; sourceTree = "<group>"; };
 		6780923A2255BA180012726C /* StatsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsPageViewController.swift; sourceTree = "<group>"; };
 		678D452A2241640300EA7018 /* iRun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iRun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		678D452D2241640300EA7018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +147,11 @@
 		67AFDD42225D165B00C59540 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		67AFDD44225ECEA000C59540 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		67B7AE1A225402AC00B7C105 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		9D46DA0F5B5522DAEBCAA671 /* Pods-iRun WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iRun WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-iRun WatchKit Extension/Pods-iRun WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		9D9C9065B062EA66CC6CE548 /* Pods-iRun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iRun.release.xcconfig"; path = "Target Support Files/Pods-iRun/Pods-iRun.release.xcconfig"; sourceTree = "<group>"; };
+		ABFD2F83EFE61A330D6BB400 /* Pods-iRun WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iRun WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-iRun WatchKit App/Pods-iRun WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		DAF24E34619B7E2CB544147A /* Pods-iRun WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iRun WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-iRun WatchKit Extension/Pods-iRun WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		FAB8F4A98BA37011C5ACDC44 /* libPods-iRun WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iRun WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67AFDD45225ECEA000C59540 /* HealthKit.framework in Frameworks */,
+				4CF04265D0E0F4B704D09CDA /* Pods_iRun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,17 +169,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				67134D6D22430F4200620183 /* HealthKit.framework in Frameworks */,
+				F5527482B3BCAC987D1C20DF /* Pods_iRun_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD1031F6269212A54FF1364 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51C1C56B2FA13B9FC38BBCFD /* libPods-iRun WatchKit App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F7450505439ECAC78BA4CFE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				459588B9A2404B255280A202 /* Pods-iRun.debug.xcconfig */,
+				9D9C9065B062EA66CC6CE548 /* Pods-iRun.release.xcconfig */,
+				0FD795DE9EBB1FEF737C8F9B /* Pods-iRun WatchKit App.debug.xcconfig */,
+				ABFD2F83EFE61A330D6BB400 /* Pods-iRun WatchKit App.release.xcconfig */,
+				DAF24E34619B7E2CB544147A /* Pods-iRun WatchKit Extension.debug.xcconfig */,
+				9D46DA0F5B5522DAEBCAA671 /* Pods-iRun WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		670843192241DEFD00558BCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				67AFDD44225ECEA000C59540 /* HealthKit.framework */,
 				67134D6C22430F4200620183 /* HealthKit.framework */,
+				01F4E4667ACB9B209469C185 /* Pods_iRun.framework */,
+				FAB8F4A98BA37011C5ACDC44 /* libPods-iRun WatchKit App.a */,
+				4CF7C3C0C2187113A93BDC1D /* Pods_iRun_WatchKit_Extension.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -177,6 +217,7 @@
 				678D454F2241640500EA7018 /* iRun WatchKit Extension */,
 				678D452B2241640300EA7018 /* Products */,
 				670843192241DEFD00558BCE /* Frameworks */,
+				4F7450505439ECAC78BA4CFE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				673190462267D9FC006B2431 /* StageCalculator.mlmodel */,
+				676ED58F2276778F0037AE83 /* RecommendationModel.mlmodel */,
 				67AFDD42225D165B00C59540 /* SleepCalculator.mlmodel */,
 				67AFDD15225C447100C59540 /* IQKeyboardManagerSwift */,
 				6708431C2241DEFD00558BCE /* iRun.entitlements */,
@@ -308,10 +350,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 678D45612241640600EA7018 /* Build configuration list for PBXNativeTarget "iRun" */;
 			buildPhases = (
+				114FEFBC2F475B1D65C06BF3 /* [CP] Check Pods Manifest.lock */,
 				678D45262241640300EA7018 /* Sources */,
 				678D45272241640300EA7018 /* Frameworks */,
 				678D45282241640300EA7018 /* Resources */,
 				678D45602241640600EA7018 /* Embed Watch Content */,
+				A5567A99AF116FDBE9A07EDF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -327,8 +371,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 678D455D2241640600EA7018 /* Build configuration list for PBXNativeTarget "iRun WatchKit App" */;
 			buildPhases = (
+				E1F2F8CE374571649FC0CFF5 /* [CP] Check Pods Manifest.lock */,
 				678D453A2241640400EA7018 /* Resources */,
 				678D455C2241640600EA7018 /* Embed App Extensions */,
+				9AD1031F6269212A54FF1364 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,6 +390,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 678D45592241640600EA7018 /* Build configuration list for PBXNativeTarget "iRun WatchKit Extension" */;
 			buildPhases = (
+				5682AA1D3C97F7C0F7066994 /* [CP] Check Pods Manifest.lock */,
 				678D45472241640500EA7018 /* Sources */,
 				678D45482241640500EA7018 /* Frameworks */,
 				678D45492241640500EA7018 /* Resources */,
@@ -450,6 +497,97 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		114FEFBC2F475B1D65C06BF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iRun-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5682AA1D3C97F7C0F7066994 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iRun WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5567A99AF116FDBE9A07EDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iRun/Pods-iRun-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iRun/Pods-iRun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1F2F8CE374571649FC0CFF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iRun WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		678D45262241640300EA7018 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -458,6 +596,7 @@
 				67AFDD2F225C447100C59540 /* IQTitleBarButtonItem.swift in Sources */,
 				67AFDD34225C447100C59540 /* IQKeyboardManagerConstantsInternal.swift in Sources */,
 				678D45302241640300EA7018 /* ViewController.swift in Sources */,
+				676ED5902276778F0037AE83 /* RecommendationModel.mlmodel in Sources */,
 				678D452E2241640300EA7018 /* AppDelegate.swift in Sources */,
 				67AFDD3C225C447100C59540 /* IQUIView+Hierarchy.swift in Sources */,
 				67B7AE1B225402AC00B7C105 /* RegisterPageViewController.swift in Sources */,
@@ -654,6 +793,7 @@
 		};
 		678D455A2241640600EA7018 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAF24E34619B7E2CB544147A /* Pods-iRun WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "iRun WatchKit Extension/iRun WatchKit Extension.entitlements";
@@ -677,6 +817,7 @@
 		};
 		678D455B2241640600EA7018 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D46DA0F5B5522DAEBCAA671 /* Pods-iRun WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "iRun WatchKit Extension/iRun WatchKit Extension.entitlements";
@@ -700,6 +841,7 @@
 		};
 		678D455E2241640600EA7018 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FD795DE9EBB1FEF737C8F9B /* Pods-iRun WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -720,6 +862,7 @@
 		};
 		678D455F2241640600EA7018 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABFD2F83EFE61A330D6BB400 /* Pods-iRun WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -740,6 +883,7 @@
 		};
 		678D45622241640600EA7018 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 459588B9A2404B255280A202 /* Pods-iRun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iRun/iRun.entitlements;
@@ -759,6 +903,7 @@
 		};
 		678D45632241640600EA7018 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D9C9065B062EA66CC6CE548 /* Pods-iRun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = iRun/iRun.entitlements;

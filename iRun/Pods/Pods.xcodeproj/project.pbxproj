@@ -1,0 +1,893 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1217E4D0CE71E04ED4499FF21A0D2A29 /* Pods-iRun-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 519F412619FA994542975EAFF0B2B8C4 /* Pods-iRun-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		134940B3275F45D8EC53EA4F0A745EED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079D0D73C3629E5FEE68C608D5700FF7 /* Foundation.framework */; };
+		136753C9E3FD454D5CB87A9977A15A65 /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC789D6C6B33F34F70DD71C01920974 /* FoldingCell.swift */; };
+		24AFFB16A44DEC1369A6F2A8E4DB42B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8812ECC1D6B6EE8950C080C8DA90BB /* Foundation.framework */; };
+		46B13963781A0C637585A962F128B020 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079D0D73C3629E5FEE68C608D5700FF7 /* Foundation.framework */; };
+		4F4EAB3243C0DA7812786A19DD01231C /* Pods-iRun-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B8091EA6EC096DC84CE4CDE5C9FC828 /* Pods-iRun-dummy.m */; };
+		6974F10B3F35C5CD8F6C86E104C3CC3D /* Pods-iRun WatchKit App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F904B7AEB4DD5F045027E23AADD08FA /* Pods-iRun WatchKit App-dummy.m */; };
+		94CC4C401A65CF9C123AE435E5A72476 /* FoldingCell-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AFC12BA1D5CEC5E019B5D2528C00ACD /* FoldingCell-dummy.m */; };
+		D23255F02761FCDCB5CC3CB866F625CB /* Pods-iRun WatchKit Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDE4068BA378157C9E33249C8FD6541 /* Pods-iRun WatchKit Extension-dummy.m */; };
+		E39ED61EF09974CA82D04B01735D1D6A /* FoldingCell-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CB27CD7F9655341D34C9FD4B2342681 /* FoldingCell-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F82E1EF08AAF564FCD06CC94722E3BC2 /* Pods-iRun WatchKit Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 35825454BC185691AF7ACC050E3169BF /* Pods-iRun WatchKit Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78EB591330A8DD1AE008E2D384BCD954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C195A385B19D6305B805EDCD3092739B;
+			remoteInfo = FoldingCell;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0396FCF583DFA8FC8735B6309BE33EF0 /* FoldingCell.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FoldingCell.modulemap; sourceTree = "<group>"; };
+		079D0D73C3629E5FEE68C608D5700FF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0881553EAF919D3EC99E3A848B773621 /* Pods_iRun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iRun.framework; path = "Pods-iRun.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F904B7AEB4DD5F045027E23AADD08FA /* Pods-iRun WatchKit App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iRun WatchKit App-dummy.m"; sourceTree = "<group>"; };
+		1C7D88B649C03DFCBD794B047C0B75AE /* Pods-iRun WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iRun WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		3346160EDCC5603B99D11C4CE3550FD7 /* libPods-iRun WatchKit App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-iRun WatchKit App.a"; path = "libPods-iRun WatchKit App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35825454BC185691AF7ACC050E3169BF /* Pods-iRun WatchKit Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iRun WatchKit Extension-umbrella.h"; sourceTree = "<group>"; };
+		39CC2D3280A0A4C833670BF702EAFD2E /* Pods-iRun WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iRun WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		4016128F395062D28F748E25553DD391 /* FoldingCell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FoldingCell.framework; path = FoldingCell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		449B1DBFD305846192F561A1D6F7DC79 /* Pods-iRun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iRun.release.xcconfig"; sourceTree = "<group>"; };
+		4937980E1307D9F03663B1D57721871E /* Pods-iRun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iRun.debug.xcconfig"; sourceTree = "<group>"; };
+		49C8FC9728AC2D87C3EF1E35FAD44A1D /* Pods-iRun-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iRun-acknowledgements.plist"; sourceTree = "<group>"; };
+		4AB24B1A5481295A8DAEBFC127BD24CE /* Pods-iRun WatchKit Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iRun WatchKit Extension.modulemap"; sourceTree = "<group>"; };
+		519F412619FA994542975EAFF0B2B8C4 /* Pods-iRun-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iRun-umbrella.h"; sourceTree = "<group>"; };
+		57D3358F69389000A438EF69767B090C /* Pods-iRun WatchKit Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iRun WatchKit Extension-Info.plist"; sourceTree = "<group>"; };
+		6034C7F2447CF45A16130107EC34F99E /* Pods_iRun_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_iRun_WatchKit_Extension.framework; path = "Pods-iRun WatchKit Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64CD5D67E40918BA44B43476EAE3E164 /* Pods-iRun-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iRun-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7527AA94EBF760265026199265AAB723 /* FoldingCell-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FoldingCell-prefix.pch"; sourceTree = "<group>"; };
+		7BDE4068BA378157C9E33249C8FD6541 /* Pods-iRun WatchKit Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iRun WatchKit Extension-dummy.m"; sourceTree = "<group>"; };
+		7CB27CD7F9655341D34C9FD4B2342681 /* FoldingCell-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FoldingCell-umbrella.h"; sourceTree = "<group>"; };
+		8B70715EE2AEED1875A3D7AB3D63723F /* Pods-iRun-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iRun-frameworks.sh"; sourceTree = "<group>"; };
+		8B8091EA6EC096DC84CE4CDE5C9FC828 /* Pods-iRun-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iRun-dummy.m"; sourceTree = "<group>"; };
+		96DFA4ED24FD23EEDA66B1A7AB8D3864 /* Pods-iRun WatchKit App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iRun WatchKit App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		981EC39E566D58128EF8463F19E75B4B /* Pods-iRun WatchKit Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iRun WatchKit Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9900149D28D25392E77068E8F75A7645 /* Pods-iRun.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iRun.modulemap"; sourceTree = "<group>"; };
+		9AFC12BA1D5CEC5E019B5D2528C00ACD /* FoldingCell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FoldingCell-dummy.m"; sourceTree = "<group>"; };
+		9C6FD4525E095D82372046CBB7DBED73 /* Pods-iRun WatchKit App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iRun WatchKit App-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EC789D6C6B33F34F70DD71C01920974 /* FoldingCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoldingCell.swift; path = FoldingCell/FoldingCell/FoldingCell.swift; sourceTree = "<group>"; };
+		CF96ED43B00B0F729E2BE54026FD6448 /* Pods-iRun-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iRun-Info.plist"; sourceTree = "<group>"; };
+		D0FDAEA7188C5F2581D90FA265B164F6 /* Pods-iRun WatchKit Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iRun WatchKit Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		D75FFDC0623B55A6E5F5B628E254988C /* Pods-iRun WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iRun WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		D95BE1C785E4C374E032F6CE6A3D1EBC /* FoldingCell.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FoldingCell.xcconfig; sourceTree = "<group>"; };
+		DC21E87CB328FC08D6E38B60D7B6236D /* Pods-iRun WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iRun WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		E059AB255559F72DCE99E86DF6A78A5A /* FoldingCell-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FoldingCell-Info.plist"; sourceTree = "<group>"; };
+		FB8812ECC1D6B6EE8950C080C8DA90BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17C493A0EBF5E9CC05F4B242ACF9A609 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				134940B3275F45D8EC53EA4F0A745EED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4109C696B082259EFF04B7FBDEC8F0AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B13963781A0C637585A962F128B020 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E4D7CA0D710FBEF2EB4EF21662CE799 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24AFFB16A44DEC1369A6F2A8E4DB42B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0E648BC295FD4F5FEDD4D5F3A6E8B71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0444D2915AF645810C79194BF3893DB4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				079D0D73C3629E5FEE68C608D5700FF7 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		0787781B1DED8BF0DDADF36492C289D8 /* Pods-iRun WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				96DFA4ED24FD23EEDA66B1A7AB8D3864 /* Pods-iRun WatchKit App-acknowledgements.markdown */,
+				9C6FD4525E095D82372046CBB7DBED73 /* Pods-iRun WatchKit App-acknowledgements.plist */,
+				0F904B7AEB4DD5F045027E23AADD08FA /* Pods-iRun WatchKit App-dummy.m */,
+				1C7D88B649C03DFCBD794B047C0B75AE /* Pods-iRun WatchKit App.debug.xcconfig */,
+				DC21E87CB328FC08D6E38B60D7B6236D /* Pods-iRun WatchKit App.release.xcconfig */,
+			);
+			name = "Pods-iRun WatchKit App";
+			path = "Target Support Files/Pods-iRun WatchKit App";
+			sourceTree = "<group>";
+		};
+		20F9D0129C8C2D29F95DF796661257A2 /* Pods-iRun */ = {
+			isa = PBXGroup;
+			children = (
+				9900149D28D25392E77068E8F75A7645 /* Pods-iRun.modulemap */,
+				64CD5D67E40918BA44B43476EAE3E164 /* Pods-iRun-acknowledgements.markdown */,
+				49C8FC9728AC2D87C3EF1E35FAD44A1D /* Pods-iRun-acknowledgements.plist */,
+				8B8091EA6EC096DC84CE4CDE5C9FC828 /* Pods-iRun-dummy.m */,
+				8B70715EE2AEED1875A3D7AB3D63723F /* Pods-iRun-frameworks.sh */,
+				CF96ED43B00B0F729E2BE54026FD6448 /* Pods-iRun-Info.plist */,
+				519F412619FA994542975EAFF0B2B8C4 /* Pods-iRun-umbrella.h */,
+				4937980E1307D9F03663B1D57721871E /* Pods-iRun.debug.xcconfig */,
+				449B1DBFD305846192F561A1D6F7DC79 /* Pods-iRun.release.xcconfig */,
+			);
+			name = "Pods-iRun";
+			path = "Target Support Files/Pods-iRun";
+			sourceTree = "<group>";
+		};
+		3C93E1ADB60F5A9CEF07230E92128A7B /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				FB8812ECC1D6B6EE8950C080C8DA90BB /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0444D2915AF645810C79194BF3893DB4 /* iOS */,
+				3C93E1ADB60F5A9CEF07230E92128A7B /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		776B89E4835FF33D99FB3902E826EAFC /* FoldingCell */ = {
+			isa = PBXGroup;
+			children = (
+				9EC789D6C6B33F34F70DD71C01920974 /* FoldingCell.swift */,
+				D856AD92E625C6F1BF024E79B1C52E74 /* Support Files */,
+			);
+			name = FoldingCell;
+			path = FoldingCell;
+			sourceTree = "<group>";
+		};
+		7E06731C366A3E34F388C56AFD188716 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20F9D0129C8C2D29F95DF796661257A2 /* Pods-iRun */,
+				0787781B1DED8BF0DDADF36492C289D8 /* Pods-iRun WatchKit App */,
+				FD77434520E31625FCC3693ACD6F8991 /* Pods-iRun WatchKit Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C14E98137F2BD6AFF06474B6E0AD1535 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4016128F395062D28F748E25553DD391 /* FoldingCell.framework */,
+				3346160EDCC5603B99D11C4CE3550FD7 /* libPods-iRun WatchKit App.a */,
+				0881553EAF919D3EC99E3A848B773621 /* Pods_iRun.framework */,
+				6034C7F2447CF45A16130107EC34F99E /* Pods_iRun_WatchKit_Extension.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */,
+				FD0CFEF2BD79C7B3700287EB0AEFD81E /* Pods */,
+				C14E98137F2BD6AFF06474B6E0AD1535 /* Products */,
+				7E06731C366A3E34F388C56AFD188716 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D856AD92E625C6F1BF024E79B1C52E74 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0396FCF583DFA8FC8735B6309BE33EF0 /* FoldingCell.modulemap */,
+				D95BE1C785E4C374E032F6CE6A3D1EBC /* FoldingCell.xcconfig */,
+				9AFC12BA1D5CEC5E019B5D2528C00ACD /* FoldingCell-dummy.m */,
+				E059AB255559F72DCE99E86DF6A78A5A /* FoldingCell-Info.plist */,
+				7527AA94EBF760265026199265AAB723 /* FoldingCell-prefix.pch */,
+				7CB27CD7F9655341D34C9FD4B2342681 /* FoldingCell-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FoldingCell";
+			sourceTree = "<group>";
+		};
+		FD0CFEF2BD79C7B3700287EB0AEFD81E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				776B89E4835FF33D99FB3902E826EAFC /* FoldingCell */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD77434520E31625FCC3693ACD6F8991 /* Pods-iRun WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4AB24B1A5481295A8DAEBFC127BD24CE /* Pods-iRun WatchKit Extension.modulemap */,
+				981EC39E566D58128EF8463F19E75B4B /* Pods-iRun WatchKit Extension-acknowledgements.markdown */,
+				D0FDAEA7188C5F2581D90FA265B164F6 /* Pods-iRun WatchKit Extension-acknowledgements.plist */,
+				7BDE4068BA378157C9E33249C8FD6541 /* Pods-iRun WatchKit Extension-dummy.m */,
+				57D3358F69389000A438EF69767B090C /* Pods-iRun WatchKit Extension-Info.plist */,
+				35825454BC185691AF7ACC050E3169BF /* Pods-iRun WatchKit Extension-umbrella.h */,
+				39CC2D3280A0A4C833670BF702EAFD2E /* Pods-iRun WatchKit Extension.debug.xcconfig */,
+				D75FFDC0623B55A6E5F5B628E254988C /* Pods-iRun WatchKit Extension.release.xcconfig */,
+			);
+			name = "Pods-iRun WatchKit Extension";
+			path = "Target Support Files/Pods-iRun WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7A36FA735F81BD8546666167ADBF7C5C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FADCE5EF690FF7C6E3569DAD5D91E9E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E39ED61EF09974CA82D04B01735D1D6A /* FoldingCell-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81E6231FE1F10F454F8EEC43AE2C11D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82E1EF08AAF564FCD06CC94722E3BC2 /* Pods-iRun WatchKit Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4F6F30844E87F8B112C52CAC449AB9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1217E4D0CE71E04ED4499FF21A0D2A29 /* Pods-iRun-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		446B8DAB15718439C5649DDA7FDD82AB /* Pods-iRun WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0139721DEE45CD23896DBDC9D0C3359 /* Build configuration list for PBXNativeTarget "Pods-iRun WatchKit Extension" */;
+			buildPhases = (
+				81E6231FE1F10F454F8EEC43AE2C11D5 /* Headers */,
+				5A72FED867486334B03EACE989E071A4 /* Sources */,
+				6E4D7CA0D710FBEF2EB4EF21662CE799 /* Frameworks */,
+				4FF343DF78D03DED61B10D372A9E3B6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-iRun WatchKit Extension";
+			productName = "Pods-iRun WatchKit Extension";
+			productReference = 6034C7F2447CF45A16130107EC34F99E /* Pods_iRun_WatchKit_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9CBB0261658F10F2D244D0A78CA657A7 /* Pods-iRun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30A66CD0BAE5B6953C91981523BE6980 /* Build configuration list for PBXNativeTarget "Pods-iRun" */;
+			buildPhases = (
+				FC4F6F30844E87F8B112C52CAC449AB9 /* Headers */,
+				E92572853BA8F69C2D51F5F7F8FA006B /* Sources */,
+				4109C696B082259EFF04B7FBDEC8F0AB /* Frameworks */,
+				22374073BA0CF53883EACC6CD8D340A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24C6C37E4DEC58757776BCAE92705FE2 /* PBXTargetDependency */,
+			);
+			name = "Pods-iRun";
+			productName = "Pods-iRun";
+			productReference = 0881553EAF919D3EC99E3A848B773621 /* Pods_iRun.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD860083363E144F4D70A384AE956474 /* Pods-iRun WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13469BA2EF5C2A249590A7DFAA7960C6 /* Build configuration list for PBXNativeTarget "Pods-iRun WatchKit App" */;
+			buildPhases = (
+				7A36FA735F81BD8546666167ADBF7C5C /* Headers */,
+				219F77B509D4DFD17CB4F54D42FC226E /* Sources */,
+				F0E648BC295FD4F5FEDD4D5F3A6E8B71 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-iRun WatchKit App";
+			productName = "Pods-iRun WatchKit App";
+			productReference = 3346160EDCC5603B99D11C4CE3550FD7 /* libPods-iRun WatchKit App.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C195A385B19D6305B805EDCD3092739B /* FoldingCell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4F17D5592FB7C6A34A7A1FDB62EEC54 /* Build configuration list for PBXNativeTarget "FoldingCell" */;
+			buildPhases = (
+				7FADCE5EF690FF7C6E3569DAD5D91E9E /* Headers */,
+				9AB8C0FF76D609AAF70D3B6FBDCD1724 /* Sources */,
+				17C493A0EBF5E9CC05F4B242ACF9A609 /* Frameworks */,
+				D5FB6B58C1054E80F20929954778A2F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoldingCell;
+			productName = FoldingCell;
+			productReference = 4016128F395062D28F748E25553DD391 /* FoldingCell.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C14E98137F2BD6AFF06474B6E0AD1535 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C195A385B19D6305B805EDCD3092739B /* FoldingCell */,
+				9CBB0261658F10F2D244D0A78CA657A7 /* Pods-iRun */,
+				AD860083363E144F4D70A384AE956474 /* Pods-iRun WatchKit App */,
+				446B8DAB15718439C5649DDA7FDD82AB /* Pods-iRun WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22374073BA0CF53883EACC6CD8D340A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FF343DF78D03DED61B10D372A9E3B6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5FB6B58C1054E80F20929954778A2F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		219F77B509D4DFD17CB4F54D42FC226E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6974F10B3F35C5CD8F6C86E104C3CC3D /* Pods-iRun WatchKit App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A72FED867486334B03EACE989E071A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D23255F02761FCDCB5CC3CB866F625CB /* Pods-iRun WatchKit Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AB8C0FF76D609AAF70D3B6FBDCD1724 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94CC4C401A65CF9C123AE435E5A72476 /* FoldingCell-dummy.m in Sources */,
+				136753C9E3FD454D5CB87A9977A15A65 /* FoldingCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E92572853BA8F69C2D51F5F7F8FA006B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F4EAB3243C0DA7812786A19DD01231C /* Pods-iRun-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24C6C37E4DEC58757776BCAE92705FE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FoldingCell;
+			target = C195A385B19D6305B805EDCD3092739B /* FoldingCell */;
+			targetProxy = 78EB591330A8DD1AE008E2D384BCD954 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0218E14944D47A1B087652E6FF02FCE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D75FFDC0623B55A6E5F5B628E254988C /* Pods-iRun WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iRun WatchKit Extension/Pods-iRun WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iRun WatchKit Extension/Pods-iRun WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		136F9427B0362F3D3803A4101F0FBD37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D95BE1C785E4C374E032F6CE6A3D1EBC /* FoldingCell.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FoldingCell/FoldingCell-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FoldingCell/FoldingCell-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FoldingCell/FoldingCell.modulemap";
+				PRODUCT_MODULE_NAME = FoldingCell;
+				PRODUCT_NAME = FoldingCell;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2B0FAE9702D64CE177EC074A4BA8B045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39CC2D3280A0A4C833670BF702EAFD2E /* Pods-iRun WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iRun WatchKit Extension/Pods-iRun WatchKit Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iRun WatchKit Extension/Pods-iRun WatchKit Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		3BFB5314C2A769BE541E1E938A9B5D3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 449B1DBFD305846192F561A1D6F7DC79 /* Pods-iRun.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iRun/Pods-iRun-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iRun/Pods-iRun.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		46E94F8BB18485395693CA233A269457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		5E4A7F576BC397CC47A694E3F7D0A8CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		5FD6111F7F5C1BCC3226CCFEE9A0384F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D95BE1C785E4C374E032F6CE6A3D1EBC /* FoldingCell.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FoldingCell/FoldingCell-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FoldingCell/FoldingCell-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FoldingCell/FoldingCell.modulemap";
+				PRODUCT_MODULE_NAME = FoldingCell;
+				PRODUCT_NAME = FoldingCell;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A3E9160E1EC6CE11B02FB8BB5E8CB2CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C7D88B649C03DFCBD794B047C0B75AE /* Pods-iRun WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		F7B858A498726239A3534949C916BA22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4937980E1307D9F03663B1D57721871E /* Pods-iRun.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iRun/Pods-iRun-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iRun/Pods-iRun.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F8461C56DF206EF7EFAA5431750F5F7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC21E87CB328FC08D6E38B60D7B6236D /* Pods-iRun WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13469BA2EF5C2A249590A7DFAA7960C6 /* Build configuration list for PBXNativeTarget "Pods-iRun WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3E9160E1EC6CE11B02FB8BB5E8CB2CF /* Debug */,
+				F8461C56DF206EF7EFAA5431750F5F7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30A66CD0BAE5B6953C91981523BE6980 /* Build configuration list for PBXNativeTarget "Pods-iRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B858A498726239A3534949C916BA22 /* Debug */,
+				3BFB5314C2A769BE541E1E938A9B5D3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E4A7F576BC397CC47A694E3F7D0A8CA /* Debug */,
+				46E94F8BB18485395693CA233A269457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0139721DEE45CD23896DBDC9D0C3359 /* Build configuration list for PBXNativeTarget "Pods-iRun WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B0FAE9702D64CE177EC074A4BA8B045 /* Debug */,
+				0218E14944D47A1B087652E6FF02FCE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4F17D5592FB7C6A34A7A1FDB62EEC54 /* Build configuration list for PBXNativeTarget "FoldingCell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FD6111F7F5C1BCC3226CCFEE9A0384F /* Debug */,
+				136F9427B0362F3D3803A4101F0FBD37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

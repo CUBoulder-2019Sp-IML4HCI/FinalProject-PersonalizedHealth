@@ -9,7 +9,7 @@
 import UIKit
 
 class feedbackViewController: UIViewController {
-
+    let defaults = UserDefaults.standard
     @IBOutlet weak var sliderValue: UILabel!
     override func viewDidLoad() {
         
@@ -37,17 +37,44 @@ class feedbackViewController: UIViewController {
         DispatchQueue.main.async {
             self.sliderValue.text = "\(currentValue)"
         }
+      
         
     }
 
 
     @IBAction func submitFeedbackButton(_ sender: Any) {
-        let feedbackValue = Int(self.sliderValue.text!)
+        let currentValue = Int(self.sliderValue.text!)
         
         //
         //Given a user feedback, update our recommendation
         //
-        print(feedbackValue ?? "None")
+        var currentRec = defaults.integer(forKey: "recommendation")
+        print("Current Rec is: ",currentRec)
+        
+        if currentValue == 4{
+            if currentRec > 0{
+                defaults.set(currentRec-1, forKey: "recommendation")
+            }
+        }
+        if currentValue == 5{
+            if currentRec > 1{
+                defaults.set(currentRec-2, forKey: "recommendation")
+            }
+        }
+        if currentValue == 1{
+            if currentRec < 8{
+                defaults.set(currentRec+1, forKey: "recommendation")
+            }
+        }
+        if currentValue == 0{
+            if currentRec < 7{
+                
+                defaults.set(currentRec+2, forKey: "recommendation")
+                
+            }
+        }
+        print(currentValue ?? "None")
+        print("Current Rec: ",defaults.integer(forKey: "recommendation"))
    
         //Put in an alert thanking/acknowledging user for feedback.
         self.navigationController?.popViewController(animated: true)

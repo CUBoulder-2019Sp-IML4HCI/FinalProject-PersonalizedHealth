@@ -42,49 +42,16 @@ class CurrentPlanViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        
-        updateUserValues()
         showPrediction()
     }
     
 
     func showPrediction(){
-        ModelHeader.text = UserDefaults.standard.string(forKey: "usersEmail")!
+        ModelHeader.text = "Please use this page while you are starting and ending a new workout!"
         
-        let recommendationModel = StageCalculator()
-        
-        
-        do{
-            //Amount ran
-            let usersRecentMilesRan = defaults.string(forKey: "usersRecentMilesRan")
-            //Amount Walked
-            
-            let usersRecentMilesWalked = defaults.string(forKey: "usersRecentMilesWalked")
-            
-            var totalDistance = Double(usersRecentMilesRan!)! + Double(usersRecentMilesWalked!)!
-            
-            var frac = Double(usersRecentMilesRan!)! / totalDistance
-            
-            var timeFrac = Double(0.5)
-            let workoutPrediction = try recommendationModel.prediction(jog_abs_time: Double(usersRecentMilesRan!)!, jog_frac_time: timeFrac, jog_abs_dist: totalDistance, jog_frac_dist: frac)
+    }
+    
 
-            
-            ModelHeader.text = String(workoutPrediction.stage)
-            
-            
-            
-        }
-        catch{
-            print("Unable to perform inference")
-        }
-        
-    }
-    
-    func updateUserValues(){
-       print("HI")
-        
-    }
-    
     @IBAction func startWorkoutButtonTapped(_ sender: Any) {
         if (self.currentWorkout){
             //finish the current workout
@@ -103,22 +70,6 @@ class CurrentPlanViewController: UIViewController {
 
 
     }
-    func getHeartRate() -> Double? {
-        var mostRecentHeartRate: Double?
-        
-        
-        
-        return mostRecentHeartRate
-    }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
  
 }
