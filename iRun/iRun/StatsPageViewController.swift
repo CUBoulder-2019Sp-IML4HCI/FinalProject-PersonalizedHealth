@@ -8,11 +8,11 @@
 
 import UIKit
 import HealthKit
-import FoldingCell
 
 
 class StatsPageViewController: UIViewController {
-    let recommendationModel = RecommendationModel()
+    
+    let recommendationModel = runningRecommendation()
     
     let healthStore = HKHealthStore()
     
@@ -25,7 +25,7 @@ class StatsPageViewController: UIViewController {
     
     @IBOutlet weak var recentPace: UILabel!
     
-    @IBOutlet weak var recentHR: UILabel!
+
     
     @IBOutlet weak var curRecommendationHeader: UILabel!
     
@@ -68,10 +68,9 @@ class StatsPageViewController: UIViewController {
             
             
             name.text = "Welcome " + usersName!
+            recentDistance.text = "You went a total of " + String(defaults.double(forKey: "recentDistance")) + " km last workout!"
+            var curRec = defaults.integer(forKey: "recommendation")
             
-
-            let curRec = defaults.integer(forKey: "recommendation")
-    
             curRecommendationHeader.text = "Workout " + String(curRec)
             curRecommendationImage.image = recImages[curRec]
             
@@ -95,6 +94,7 @@ class StatsPageViewController: UIViewController {
     
     @IBAction func getRecommendation(_ sender: Any) {
         var tempDistance = ""
+        
         //Get Times of last workout
         if hasDoneOneWorkout() == "true" {
             
@@ -102,7 +102,7 @@ class StatsPageViewController: UIViewController {
             getLastHeartRate{ (result) in
                 DispatchQueue.main.async{
         
-                    self.recentHR.text = "Last workout's average heartrate was: " + String(result)
+                    print("Last workout's average heartrate was: " + String(result))
                     
                 }
             }
@@ -110,7 +110,7 @@ class StatsPageViewController: UIViewController {
             //Distance
             getLastWorkoutDistance{ (result) in
                 DispatchQueue.main.async{
-                    self.recentDistance.text = String(result)
+                    self.recentDistance.text = "You went a total of " + String(result) + " km last workout!"
                     self.defaults.set(result, forKey: "recentDistance")
                 }
             }
@@ -124,17 +124,25 @@ class StatsPageViewController: UIViewController {
                 let finishTime = defaults.object(forKey:"finishTime") as! Date
                 let distanceBetweenDates: TimeInterval? = finishTime.timeIntervalSince(startTime)
                 let minutesInAnHour: Double = 60
+                
+                
                 let minutesBetweenDates = distanceBetweenDates! / minutesInAnHour
-           
+                
                 //Get pace
-                let recentDistanceDouble = defaults.double(forKey: "recentDistance")
-                let pace = minutesBetweenDates / recentDistanceDouble
-                recentPace.text = "You're recent pace for the last workout was: " + String(pace)
+                var recentDistanceDouble = defaults.double(forKey: "recentDistance")
+                recentDistanceDouble *= 1.60934
                 
+                var pace = minutesBetweenDates / recentDistanceDouble
+//                if Int(pace) > 45{
+//                    pace = 45
+//                }
+                recentPace.text = "You're recent pace for the last workout was: " + String(pace) + " minutes per mile."
+              
                 //Get prediction
-                let prediction = try recommendationModel.prediction(tot_time: minutesBetweenDates, tot_dist: recentDistanceDouble, pace: pace )
                 
-                let integerPrediction = prediction.stage
+                
+                let prediction = try recommendationModel.prediction(pace: pace,distance: recentDistanceDouble)
+                let integerPrediction = prediction.rec
                 
                 //Set defaults (persisted) recommendation to the new predictin
                 defaults.set(integerPrediction, forKey: "recommendation")

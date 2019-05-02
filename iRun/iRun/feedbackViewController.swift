@@ -78,6 +78,7 @@ class feedbackViewController: UIViewController {
    
         //Put in an alert thanking/acknowledging user for feedback.
         self.navigationController?.popViewController(animated: true)
+        
     }
     
 }

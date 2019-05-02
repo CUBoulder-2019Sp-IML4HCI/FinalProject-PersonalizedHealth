@@ -59,13 +59,25 @@ class CurrentPlanViewController: UIViewController {
             self.startStopButton.setTitle("Start Workout", for: .normal)
             defaults.set("true", forKey:"userHasDoneWorkout")
             defaults.set(Date(), forKey:"finishTime")
+            
+            let strDate = "2019-04-17T23:00:00+0000"
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ssZZZ"
+            let date = dateFormatter.date(from: strDate)
+            defaults.set(date, forKey:"finishTime")
+            self.navigationController?.popViewController(animated: true)
             self.performSegue(withIdentifier: "userFeedback", sender: nil)
+            
         }
             else{
                 self.currentWorkout = true
                 self.startStopButton.setTitle("End Workout", for: .normal)
-                defaults.set(Date(), forKey:"startTime")
             
+                let strDate = "2019-04-17T22:00:00+0000"
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy'-'MM'-'dd'T'HH':'mm':'ssZZZ"
+                let date = dateFormatter.date(from: strDate)
+                defaults.set(date, forKey:"startTime")
             }
 
 

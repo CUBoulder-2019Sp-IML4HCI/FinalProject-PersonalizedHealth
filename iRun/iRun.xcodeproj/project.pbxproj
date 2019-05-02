@@ -49,6 +49,7 @@
 		67AFDD43225D165C00C59540 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 67AFDD42225D165B00C59540 /* SleepCalculator.mlmodel */; };
 		67AFDD45225ECEA000C59540 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67AFDD44225ECEA000C59540 /* HealthKit.framework */; };
 		67B7AE1B225402AC00B7C105 /* RegisterPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B7AE1A225402AC00B7C105 /* RegisterPageViewController.swift */; };
+		67FDDE3E227A9DE30058754F /* runningRecommendation.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 67FDDE3D227A9DE30058754F /* runningRecommendation.mlmodel */; };
 		F5527482B3BCAC987D1C20DF /* Pods_iRun_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF7C3C0C2187113A93BDC1D /* Pods_iRun_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
@@ -147,6 +148,7 @@
 		67AFDD42225D165B00C59540 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 		67AFDD44225ECEA000C59540 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		67B7AE1A225402AC00B7C105 /* RegisterPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPageViewController.swift; sourceTree = "<group>"; };
+		67FDDE3D227A9DE30058754F /* runningRecommendation.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = runningRecommendation.mlmodel; sourceTree = "<group>"; };
 		9D46DA0F5B5522DAEBCAA671 /* Pods-iRun WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iRun WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-iRun WatchKit Extension/Pods-iRun WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		9D9C9065B062EA66CC6CE548 /* Pods-iRun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iRun.release.xcconfig"; path = "Target Support Files/Pods-iRun/Pods-iRun.release.xcconfig"; sourceTree = "<group>"; };
 		ABFD2F83EFE61A330D6BB400 /* Pods-iRun WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iRun WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-iRun WatchKit App/Pods-iRun WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 			children = (
 				673190462267D9FC006B2431 /* StageCalculator.mlmodel */,
 				676ED58F2276778F0037AE83 /* RecommendationModel.mlmodel */,
+				67FDDE3D227A9DE30058754F /* runningRecommendation.mlmodel */,
 				67AFDD42225D165B00C59540 /* SleepCalculator.mlmodel */,
 				67AFDD15225C447100C59540 /* IQKeyboardManagerSwift */,
 				6708431C2241DEFD00558BCE /* iRun.entitlements */,
@@ -599,6 +602,7 @@
 				676ED5902276778F0037AE83 /* RecommendationModel.mlmodel in Sources */,
 				678D452E2241640300EA7018 /* AppDelegate.swift in Sources */,
 				67AFDD3C225C447100C59540 /* IQUIView+Hierarchy.swift in Sources */,
+				67FDDE3E227A9DE30058754F /* runningRecommendation.mlmodel in Sources */,
 				67B7AE1B225402AC00B7C105 /* RegisterPageViewController.swift in Sources */,
 				67AFDD30225C447100C59540 /* IQBarButtonItem.swift in Sources */,
 				673190452267D75B006B2431 /* CurrentPlanViewController.swift in Sources */,
