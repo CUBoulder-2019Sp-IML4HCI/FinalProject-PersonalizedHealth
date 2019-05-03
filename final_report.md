@@ -242,6 +242,8 @@ We built a minimum viable application that is capable of creating a unique runni
 
 6.  Account for all possible outcomes
 
+7. iOS development environment
+
 ### Future Work
 Our application is functionally solid however the UI was put on the back burner to focus on ML problems. A first step to improving the application would be to fully implement the prototype design. This would enhance the user’s experience.
 
