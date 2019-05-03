@@ -10,6 +10,7 @@
 
 ### Project Proposal: proposal.md 
 ### Final Report: final_report.md 
-### Final Project Video: [https://youtu.be/8UulTtOUI4U](https://youtu.be/8UulTtOUI4U) 
+### Final Project Video: [link](https://youtu.be/8UulTtOUI4U) 
+### Final Presentation: [link](https://docs.google.com/presentation/d/12HN1jaXIivBEXDRKe6C8kMC4jZvyf5ACtxYfDLkljgk/edit?usp=sharing)
 ### How to run?
 Open the iRun in XCode and start the application in simulator with WatchOS (Apple Watch Series 4) + iOS (iPhoneXR)
