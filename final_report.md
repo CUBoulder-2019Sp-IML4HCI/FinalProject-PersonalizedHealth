@@ -267,3 +267,7 @@ Finally, we would like to posit our application as a data collection application
 7.  CoreML Sk-learn connector ([link](https://apple.github.io/coremltools/generated/coremltools.converters.sklearn.convert.html))
 
 8.  Nike Run Club app ([link](https://itunes.apple.com/us/app/nike-run-club/id387771637?mt=8))
+
+## 10. Final Project Video Link
+
+[Final Video](https://youtu.be/8UulTtOUI4U)
